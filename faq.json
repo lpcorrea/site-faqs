@@ -1,0 +1,1637 @@
+[
+  {
+    "pergunta": "Clientes não estão recebendo o código de autenticação através do automatico@narwal",
+    "causa": "Foi relatado por 1 cliente que não estava recebendo o código de verificação",
+    "solucao": "A solução para este caso foi limpar a caixa de entrada do automatico@narwalsistemas.com.br"
+  },
+  {
+    "pergunta": "Tem a possibilidade de Amarrar a parametrização ao processo importação automatico?",
+    "causa": "Duvida",
+    "solucao": "Apenas informando na aba de entrega do processo, dessa forma a parametrização  ficará vinculada ao processo "
+  },
+  {
+    "pergunta": "ERRO ao gerar a parcela do numerário",
+    "causa": "Erro: \"Informe o fornecedor no cadastro de despachante\"",
+    "solucao": "Necessário informar o fornecedor no cadastro do despachante."
+  },
+  {
+    "pergunta": "Atualização de certificado do representante legal.",
+    "causa": "dúvida.",
+    "solucao": "Basta acessar a rotina \"representante legal\" e editar o cadastro."
+  },
+  {
+    "pergunta": " Cálculo dos Imposto da Simulação de Importação",
+    "causa": "Calculo de Impostos do relatório de Simulação de Importação não esta correto\nVMLE x Alíquota",
+    "solucao": "Verifiquei que o relatório está correto. A divergência no valor entre VMLD e Taxa II ocorre porque a Taxa II é apenas informativa. Observei que nesta simulação há vários itens com alíquotas diferentes. Se você pegar as alíquotas de cada item, multiplicá-las pelo valor total do produto e somar todos os resultados, verá que o valor dos impostos está correto. Portanto, a confusão está sendo causada pelas diferentes alíquotas dos itens."
+  },
+  {
+    "pergunta": "Erro ao realizar envio de NF para Sankhya.",
+    "causa": "Erro: Erro durante a análise de EntityName. Linha 21, posição 439.\n\nEsse erro ocorreu por conta de um caracter especial, nesse caso o \"&\" comercial. \n\nEsse erro ocorre pois o arquivo enviado é um XML, e alguns caracteres não são permitidos.\n",
+    "solucao": "Alterar o valor que estava informado no campo. "
+  },
+  {
+    "pergunta": "Erro 500 ao acessar o Narwal",
+    "causa": "Estou tentando realizar o login no Narwal, mas ao inserir meus dados e clicar em login, é exibido o erro \"Erro HTTP 500\". O que fazer?",
+    "solucao": "Este caso foi resolvido no ticket 55790."
+  },
+  {
+    "pergunta": "Ao vincular o pedido de compra no processo estava solicitando um NCM",
+    "causa": "Duvida",
+    "solucao": "Verificamos que no pedido de compra o item estava sem o ncm, após informar o processo saiu de acordo. "
+  },
+  {
+    "pergunta": "Como resolver o erro \"Object reference not set to an instance of an object\" ao integrar a planilha de produtos?",
+    "causa": "Ao tentar integrar uma planilha de produtos no processo e clicar em \"Avançar\", você recebe a mensagem de erro \"Object reference not set to an instance of an object\". O que devo fazer para solucionar isso?",
+    "solucao": "Esse erro ocorre quando há um dado inserido incorretamente na planilha. Após investigar, foi identificado que o erro estava relacionado a um dado localizado algumas linhas abaixo das informações dos produtos. Para resolver, basta remover esse dado incorreto e tentar a integração novamente. Após a correção, a integração poderá ser realizada sem problemas."
+  },
+  {
+    "pergunta": "Erro ao gerar nota de saída, valores divergentes da planilha de calculo. ",
+    "causa": "Erro ao cadastrar parametrização. ",
+    "solucao": "Para esse cliente já tivemos duas notas com a mesma situação, conforme atendimentos passados ao cliente, precisa alterar a configuração do cliente informando o calculo da nota fiscal como Valor total - ICMS. \n\nAssim como já configurado a parametrização para emissão da nota. \n\nNesse caso ele fez o ajuste cadastro do cliente, porém não gerou uma segunda nota, após cancelar e gerar uma nova nota os valores saíram de acordo. "
+  },
+  {
+    "pergunta": "Valor do VMLD nas informações complementares da DI. ",
+    "causa": "Erro do usuário ",
+    "solucao": "Em analise a auditoria verificado que o cliente informou o valor divergente no seguro, dessa forma o ajuste ocorreu apenas nas adições, as informações ficaram divergente. "
+  },
+  {
+    "pergunta": "Erro 500 ao acessar o Narwal",
+    "causa": "Estou tentando realizar o login no Narwal, mas ao inserir meus dados e clicar em login, é exibido o erro \"Erro HTTP 500\". O que fazer?",
+    "solucao": "Este caso foi resolvido no ticket 55790."
+  },
+  {
+    "pergunta": "Erro \"Informe o NCM\" ao Integrar XML da DI",
+    "causa": "Ao tentar integrar um XML da DI, a mensagem de erro \"Informe o NCM\" é exibida.",
+    "solucao": "Esse erro ocorre quando o sistema não encontra o NCM correspondente no cadastro. O XML da DI procura o NCM pelo campo chave, e é necessário que o valor da chave do NCM no cadastro seja exatamente igual ao especificado no XML.\n\nSolução:\n\n- Verifique se o NCM presente no XML está correto.\n\n- Acesse o cadastro do NCM e confira se o valor da chave corresponde ao que está no XML.\n\n- Caso necessário, ajuste o NCM no cadastro para garantir que a chave coincida com a do XML."
+  },
+  {
+    "pergunta": "--",
+    "causa": "--",
+    "solucao": "--"
+  },
+  {
+    "pergunta": "Porque não consigo gerar um numerário complementar?",
+    "causa": "Duvida",
+    "solucao": "Importante que ao criar a primeira parcela, ao aparecer a mensagem \"deseja enviar parcela\" seja confirmado.\n\nApós realizar a baixa da primeira parcela no contas á pagar, retornar ao processo, criar uma nova despesa na tela de numerário e realizar o lançamento da parcela complementar."
+  },
+  {
+    "pergunta": "Rotina Portos Desembarque.",
+    "causa": "Dúvida",
+    "solucao": "A rotina \"Portos desembarque\" foi renomeada e agora pode ser encontrada em \"Contrato de Fornecedores\"."
+  },
+  {
+    "pergunta": "Narwal não está atualizando.",
+    "causa": "Não estava sendo possível atualizar pois o nome do pool de aplicação estava incorreto nas configurações.",
+    "solucao": "Ajustado o nome de acordo como estava no servidor, após isso foi possível atualizar."
+  },
+  {
+    "pergunta": "Referência de objeto ao tentar enviar nota fiscal de saída (expo) ao ERP (Sênior)",
+    "causa": "Ao tentar enviar ao Sênior uma NF de exportação, o Narwal acusou uma referência de objeto.",
+    "solucao": "Faltou o preenchimento da informação de forma de pagamento."
+  },
+  {
+    "pergunta": "Pedido de venda não integra no Narwal.",
+    "causa": "Identificado que a chave do campo \"via transporte\" estava vindo com um espaço em branco.",
+    "solucao": "Foi necessário ajustar o pedido no ERP, após ajuste o pedido integrou normalmente."
+  },
+  {
+    "pergunta": "Ao gerar nota complementar os valores ficam divergentes ao ajustar manual. ",
+    "causa": "Erro usuário",
+    "solucao": "Em analise verifiquei que cliente não estava preenchendo alguns campos no ajuste manual, não informou a despesa no processo para gerar nota complementar. \n\nNa nota complementar quando complementa valor dos produtos precisa ser ajustado a quantidade e valor unitário de cada item. "
+  },
+  {
+    "pergunta": "Ao registrar uma DI ocorria o erro \"VALOR EM REAL DO VMLE - VALOR INFORMADO INCOMPATIVEL COM O CALCULADO PELO SISTEMA\"",
+    "causa": " O preço unitário dos itens estava diferente entre LI e Processo.",
+    "solucao": "Verificar valores na LI para condizer com o Processo."
+  },
+  {
+    "pergunta": "Duas linhas da mesma despesa na NFD",
+    "causa": "Na integração de NFD como custo ao SAP B1, não pode haver mais de uma linha da mesma despesa.",
+    "solucao": "Unir as duas linhas da mesma despesa."
+  },
+  {
+    "pergunta": "Volume informado não é valido para produto",
+    "causa": "A chave da unidade de medida informada no cadastro do produto utilizado na NF era diferente da unidade de medida informada no Sankhya",
+    "solucao": "Alterar a unidade de medida dentro do item da NFe no Narwal para a unidade de medida corre, ou seja, a unidade de medida que possui uma chave válida dentro do Sankhya."
+  },
+  {
+    "pergunta": "Ocorreu um erro ao enviar o e-mail.",
+    "causa": "Empresa estava sem URL Externa no cadastro.",
+    "solucao": "Informar URL Externa."
+  },
+  {
+    "pergunta": "Como posso cadastrar E-CPF e E-CNPJ no Narwal?",
+    "causa": "Gostaria de saber quais caminhos devo seguir para cadastrar os certificados E-CPF e E-CNPJ no Narwal.",
+    "solucao": "Encerrar os chamados:\n\n56804\n55226\n56191\n55814\n56359\n\nComo incluir o certificado digital do E-CPF no Narwal?\n\n1. Acesse a rotina Representante Legal.\n\n2. Localize o representante desejado.\n\n3. Edite o cadastro do representante.\n\n4. Inclua o novo certificado digital E-CPF e insira a senha correspondente.\n\nComo cadastrar o certificado digital E-CNPJ para emissão de notas fiscais no Narwal?\n\nPara a emissão de notas fiscais, cadastre o certificado digital E-CNPJ da Filial.\n\nCaso a nota fiscal seja emitida por um importador, é necessário cadastrar o certificado digital do importador na rotina de Importador."
+  },
+  {
+    "pergunta": "Certificado Informado expirou favor atualizar, erro ao enviar nota para sefaz?",
+    "causa": "Duvida",
+    "solucao": "Verificar que está flegado para emissão de nota pelo Importador, e no cadastro da BM3 da rotina importador não possui o certificado. Poderia por gentileza informar o certificado no cadastro ou estar removendo a flag da tag e enviar a nota novamente. "
+  },
+  {
+    "pergunta": "Ao gerar nota complementar o valor dos produtos estava ficando divergente. ",
+    "causa": "Cliente gerando nota fiscal complementar, porém não foi retificado a DI iria fazer o ajuste manual. ",
+    "solucao": "O que está interferindo no calculo do produto é a parametrização utilizada, o correto seria criar uma parametrização de nota fiscal como complementar, para que seja utilizada nas notas fiscais. \n\n\n\nTirei a formula e ajustei a nota e a nota ficou conforme os ajustes, quando informo a formula na parametrização a nota fiscal ela fica alterada. \n\n\n\nPossui apenas um processo que a nota está gerada, dessa forma caso deseja continuar com a mesma parametrização remover a formula do valor total dos produtos e ajustar, após a nota autorizada informar a formula novamente. \n\n"
+  },
+  {
+    "pergunta": "Erro ao salvar pedido de compra \"Informe o fornecedor no cadastro de origem!\"",
+    "causa": "Ao tentar salvar um pedido de compra, a seguinte mensagem é exibida: \"Informe o fornecedor no cadastro de origem!\".",
+    "solucao": "Até a data de hoje (23/04/2025), a mensagem de alerta ainda não possui um tratamento adequado no sistema, o que dificulta a identificação do problema.\n\nPara solucionar esse caso, siga os passos abaixo:\n\n1. Identifique o nome do despachante vinculado ao pedido de compra (ou ao processo, se for o caso).\n\n2. Acesse a rotina \"Despachante\".\n\n3. Edite o cadastro do despachante correspondente -> Vá até a aba \"Integração\".\n\n4. No campo \"Fornecedor\", selecione e atribua um fornecedor válido.\n\nApós realizar essa atribuição, o sistema permitirá salvar o pedido de compra normalmente."
+  },
+  {
+    "pergunta": "Está sendo resolvido no ticket 56812",
+    "causa": "Está sendo resolvido no ticket 56812",
+    "solucao": "Está sendo resolvido no ticket 56812"
+  },
+  {
+    "pergunta": "Por que alguns processos com DI registrada não atualizam a data desembaraço?",
+    "causa": "Dúvida.",
+    "solucao": "O Narwal realiza a alteração de acordo com o que está no SISCOMEX,. Neste caso, o Narwal consultou a informação e realizou o insert da data no processo"
+  },
+  {
+    "pergunta": "Erro ao integrar planilha de produtos.",
+    "causa": "Erro: Divisão por zero. Revise a Formula de calculo do seguro.",
+    "solucao": "Necessário informar a taxa da moeda no processo para prosseguir com a integração. "
+  },
+  {
+    "pergunta": "Onde cadastrar o Consignee?",
+    "causa": "Dúvida.",
+    "solucao": "As informações do campo 'Consignee' são trazidas do cadastro do cliente. Dessa forma quando cadastrado um novo cliente, o mesmo é possível informar nesse campo. "
+  },
+  {
+    "pergunta": "Por que é necessário excluir uma Invoice para integrar o XML da DI?",
+    "causa": "Dúvida.",
+    "solucao": "No XML deve possuir a mesma numeração de invoice que está no processo, caso contrário não será possível integrar, somente excluindo a invoice existente.\n\n"
+  },
+  {
+    "pergunta": "Após atualizar, ocorre erro 500 ao logar no sistema",
+    "causa": "Aplicação atualizou e o banco de dados não",
+    "solucao": "Rodar migration do banco manualmente"
+  },
+  {
+    "pergunta": "Authorization has been denied for this request ao integrar planilha em pedido de compra",
+    "causa": "Causa: Este erro ocorre devido a perda de conexão do usuário com o narwaw.",
+    "solucao": "Solução: A solução pode ser realizada apenas relogando no narwal e realizando a mesma operação para integrar a planilha."
+  },
+  {
+    "pergunta": "Erro ao acessar o narwal.",
+    "causa": "Usuário relata que, ao tentar realizar login no sistema Narwal, é exibida a seguinte mensagem de erro:\n\"Ocorreu um erro ao enviar o e-mail. Por favor, verifique as configurações SMTP da conta.\"",
+    "solucao": "Foi identificado que o servidor SMTP configurado pelo cliente apresentava falhas de autenticação, impedindo o envio de e-mails e, consequentemente, o processo de login.\nPara restabelecer o acesso, foi configurado temporariamente o SMTP interno da Narwal (automatico@narwalsistemas.com.br), normalizando o funcionamento do sistema."
+  },
+  {
+    "pergunta": "Nota fiscal com valor divergente de ICMS?",
+    "causa": "Cliente informando que o valor do ICMS não estava de acordo na nota fiscal. ",
+    "solucao": "Em analise identifiquei que não tinham exceções criadas para os produtos com tributação do ICMS, dessa forma solicitei que fosse configurado e que gerasse a nota novamente. \n\nEm analise identificamos que possuía produtos com diferimento de ICMS, após os ajustes feitos na parametrização a nota saiu de acordo. "
+  },
+  {
+    "pergunta": "--",
+    "causa": "--",
+    "solucao": "---"
+  },
+  {
+    "pergunta": "Lentidão geral",
+    "causa": "Resolvido com KB",
+    "solucao": "Ticket: 55930"
+  },
+  {
+    "pergunta": "Por que o processo não está aparecendo no Narwal?",
+    "causa": "Dúvida.",
+    "solucao": "O processo estava inativo e cancelado."
+  },
+  {
+    "pergunta": "Por que os impostos não estão de acordo com a DI?",
+    "causa": "Impostos divergentes.",
+    "solucao": "O valor dela na DI está R$ 1526,09 e no Narwal R$ 726,15, o que causou a diferença. Após o ajuste, os valores ficaram de acordo."
+  },
+  {
+    "pergunta": ".",
+    "causa": ".",
+    "solucao": "."
+  },
+  {
+    "pergunta": "É possível exportar o espelho da nota fiscal em XML no sistema Narwal?",
+    "causa": "Atualmente, o sistema Narwal possui apenas a funcionalidade de geração do espelho da nota fiscal em formato PDF. A exportação em XML não está disponível como funcionalidade nativa nas versões atuais.",
+    "solucao": "A exportação do espelho da nota fiscal em XML trata-se de uma melhoria não contemplada na versão atual do sistema. Foi oferecida uma proposta via solicitação de F08 para viabilizar essa funcionalidade, mas o cliente optou por não prosseguir.\n\nCaso haja interesse futuro, a solicitação poderá ser reavaliada e encaminhada como sugestão de melhoria. Até o momento, a geração permanece disponível apenas em formato PDF."
+  },
+  {
+    "pergunta": "Valor da Nota Fiscal divergente do valor do Processo.",
+    "causa": "Alguns valores não estava batendo na NF, pois o valor do seguro deveria ser collect ao invés de prepaid.",
+    "solucao": "Após ajustar o valor do seguro para collect, e calculado os impostos, foi possível gerar a NF com os devidos valores. Os demais ajustes foram feitos por parte do cliente. "
+  },
+  {
+    "pergunta": "Erro no Follow-up",
+    "causa": "Dúvida.",
+    "solucao": "Explicado a regra de disparo do follow-up de atracação."
+  },
+  {
+    "pergunta": "Atualização de Certificado Digital",
+    "causa": "Dúvida",
+    "solucao": "Para atualizar o certificado digital é necessário acessar a rotina \"Filial\", editar a filial desejada, e ir na aba \"Nota Fiscal\"."
+  },
+  {
+    "pergunta": "Chave do Fabricante Estrangeiro Invalida",
+    "causa": "Chave do Fabricante Estrangeiro informado no item da NFe estava com uma virgula e o Sankhya aceita apenas numeros.",
+    "solucao": "Retirado a vírgula da chave do fabricante estrangeiro."
+  },
+  {
+    "pergunta": "Portal fora do ar",
+    "causa": "Estamos tentando acessar o portal, mas ele está fora do ar. O que fazer?",
+    "solucao": "Primeiramente, verifique se a application pool está ativa ou se houve alguma migração recente da aplicação. Se nenhuma dessas for a causa, entre em contato com a equipe de infraestrutura para uma análise mais detalhada.\n\nNeste caso em específico, application pool estava parada."
+  },
+  {
+    "pergunta": "Mensagem Informe o estado do Destinatário ao gerar a nota fiscal?",
+    "causa": "Duvida ",
+    "solucao": "Para a mensagem, basta acessar o cadastro do fornecedor, e adicionar as informações de estado exterior assim as informações vão conforme o informado. "
+  },
+  {
+    "pergunta": "Base de calculo de PIS/COFINS, saindo divergente na nota. ",
+    "causa": "Duvida ",
+    "solucao": "Em analise, o frete estava para ser destacado na nota dessa forma ele precisa dentro da parametrização na parte de PIS/COFINS informar a formula. \n\n{valortotal}+{frete}, teste realizado em HML versão 2025.2.1.2 nota saiu de acordo após ajustes. "
+  },
+  {
+    "pergunta": "Descrição dos produtos duplicados",
+    "causa": "Estou vinculando alguns produtos do pedido de compra para o processo mas a descrição dos produtos está duplicando. O que devo fazer?",
+    "solucao": "A solução para este caso foi alterar manualmente a descrição dos produtos. Foi tentando replicar o mesmo cenário mas sem sucesso."
+  },
+  {
+    "pergunta": "Como seguir na emissão de uma NF de retorno de exportação?",
+    "causa": "Dúvida",
+    "solucao": "Pode gerar a partir da rotina de nota fiscal:\n\"Novo (Exportação)\" caso tenha vinculo com processo, e caso deseja realizar a criação de uma NF de exportação sem processo vinculado, pode optar por \"Novo (Saída)\".\n\n"
+  },
+  {
+    "pergunta": "Atualização trocou o token do cliente ",
+    "causa": "Atualização trocou o token do cliente ",
+    "solucao": "adicionei para o token dinâmico e voltou a funcionar"
+  },
+  {
+    "pergunta": "Erro ao vincular XML de NF de exportação",
+    "causa": "Ao tentar integrar um XML de Nota Fiscal de Exportação, é exibida a seguinte mensagem de erro:\n\nA instrução DELETE conflitou com a restrição de REFERENCE\n\"FK_dbo.ExportacaoNfeReferenciada_dbo.Exportac\".\nO conflito ocorreu no banco de dados \"NelimportPRDComex\", tabela\n\"dbo.ExportacaoNfeReferenciada\", coluna 'ExportacaoNfeltemId'.\nA instrução foi finalizada.",
+    "solucao": "Esse erro ocorre porque já existe uma ou mais Notas Fiscais vinculadas ao processo. Ao tentar vincular um novo XML, o sistema tenta remover o vínculo anterior, o que viola uma restrição de integridade referencial no banco de dados.\n\nSolução:\nVerifique se já existem Notas Fiscais vinculadas ao processo. Caso existam, será necessário encerrar o processo e criar um novo para que possa prosseguir com o registro da DU-E."
+  },
+  {
+    "pergunta": "Pedido de compra que estava desativado. ",
+    "causa": "Erro de usuário ",
+    "solucao": "Em auditoria verificamos que o pedido de compra tinha sido desativado, por um usuária Larissa, dessa forma conseguimos ativar ele novamente. "
+  },
+  {
+    "pergunta": "Lentidão geral",
+    "causa": "Resolvido com KB",
+    "solucao": "Ticket: 55930"
+  },
+  {
+    "pergunta": "Erro ao registrar DUE no Narwal.",
+    "causa": "Cliente emitiu a nota incorretamente e integrou a nota ao Narwal. Dessa forma ocorrendo erro ao tentar realizar o registro da DU-E.",
+    "solucao": "Reemitir a nota fiscal e vincular novamente ao Narwal."
+  },
+  {
+    "pergunta": "Gerar segunda parcela de numerario.",
+    "causa": "Dúvida.",
+    "solucao": "Resolvido com KB 55794."
+  },
+  {
+    "pergunta": "Como deixar verde o semáforo Correção BL",
+    "causa": "Campo \"Data correção do conhecimento\" no processo está em branco.",
+    "solucao": "Informar campo \"Data correção do conhecimento\" no processo."
+  },
+  {
+    "pergunta": "Chave Bacen do Pais sem 0",
+    "causa": "A chave bacen do pais estava vindo sem os zeros na frente.\nErrado: 230\nCorreto: 00230",
+    "solucao": "Alterado para que venha com os zeros"
+  },
+  {
+    "pergunta": "Erro ao tentar registrar DU-E. \"O PESO LIQUIDO INFORMADO E INVALIDO. POR FAVOR, REVEJA A INFORMACAO\"",
+    "causa": "Esse problema ocorreu pois o peso liquido unitado estava negativo no processo.",
+    "solucao": "Foi necessário ajustar o peso liquido unitario do item no processo."
+  },
+  {
+    "pergunta": "Sistema não entra",
+    "causa": "Problema de rota.",
+    "solucao": "Conectar a internet."
+  },
+  {
+    "pergunta": "Erro 500 ao acessar o Narwal",
+    "causa": "Estou tentando realizar o login no Narwal, mas ao inserir meus dados e clicar em login, é exibido o erro \"Erro HTTP 500\". O que fazer?",
+    "solucao": "Este caso foi resolvido no ticket 55790."
+  },
+  {
+    "pergunta": "Ao gerar a NF está ocorrendo a mensagem: As adições do processo precisam estar geradas",
+    "causa": "Dúvida",
+    "solucao": "Acessar a Declaração de Importação, clicar no menu de ação e clicar em Processar. Informar o tipo de declaração e salvar;\nSeguir com a criação da NF."
+  },
+  {
+    "pergunta": "Não é possível vincular a invoice ao processo e ocorre erro de saldo.",
+    "causa": "Não é possível vincular a invoice ao processo e ocorre erro de saldo menor que zero.",
+    "solucao": "Verifique se o processo foi criado a partir do \"Pedido de Compra\".\n\nCaso a invoice também tenha sido criada a partir do \"Pedido de Compra\", ao tentar associá-la ao \"Processo\", ocorrerá o erro de saldo.\n\nPara corrigir, será necessário cancelar a invoice e criar uma nova a partir do \"Processo\". Utilize o botão \"Nova Invoice\" para isso.\n\nPara futuros processos, siga o fluxo correto:\n\nPedido de Compra > Invoice > Processo\n\nSempre crie a invoice a partir do pedido de compra e o processo a partir da invoice para evitar erros de saldo."
+  },
+  {
+    "pergunta": ".",
+    "causa": ".",
+    "solucao": "."
+  },
+  {
+    "pergunta": "Como alterar o \"pagos por\" dos impostos?",
+    "causa": "Dúvida.",
+    "solucao": "A alteração pode ser realizada  na aba \"DI/DA\" do processo.\n\n"
+  },
+  {
+    "pergunta": "Erro ao logar/redefinir senha \" Authentication unsuccessful\" - SMTP",
+    "causa": "Quando tento acessar o Narwal ou enviar algum e-mail de redefinição, está sendo exibida a mensagem:\n\"Authentication unsuccessful: O login na conta falhou — ou por senha incorreta, ou por bloqueio de autenticação.\" O que posso fazer para resolver?",
+    "solucao": "Esse erro indica que o sistema não conseguiu autenticar a conta de e-mail configurada no servidor SMTP. Para resolver, é necessário que a equipe de infraestrutura do cliente verifique se as configurações estão corretas.\n\nVerificações recomendadas:\n\n- A senha da conta pode estar incorreta ou expirada.\n\n- A conta pode ter autenticação multifator (MFA) ativada, o que exige o uso de senha de aplicativo ou autenticação via OAuth2.\n\n- O acesso SMTP pode estar desativado para a conta utilizada.\n\n- A configuração de segurança do cliente (como porta e TLS) pode estar incorreta.\n\n- A conta pode ter sido temporariamente bloqueada por medidas de segurança da Microsoft.\n\nComo solução paliativa, é possível solicitar à equipe de infraestrutura da Narwal a substituição temporária do SMTP do cliente pelo SMTP interno da empresa (automatico@narwalsistemas.com.br).\n\nPara isso, entre em contato com a equipe de infraestrutura ou com o time de suporte e solicite a atribuição do SMTP interno da Narwal."
+  },
+  {
+    "pergunta": "Na NF o valor do IPI está divergente do processo",
+    "causa": "Dúvida",
+    "solucao": "Na parametrização NF, na guia Transporte verificar se o campo Rateio frete está com a opção Peso. "
+  },
+  {
+    "pergunta": "É obrigatório informar o Fabricante na DUIMP mesmo sendo o mesmo que o Fornecedor? ",
+    "causa": "Sim. Mesmo que o Fabricante e o Fornecedor sejam a mesma empresa, o Portal Único exige que ambos sejam informados separadamente no processo.\nIsso se deve ao fato de que o sistema utiliza o campo \"Fabricante\" de forma independente, para fins de validação e análise da operação.",
+    "solucao": "Informar o Fabricante no processo é obrigatório, independente de ele ser ou não igual ao Fornecedor.\nComo os cadastros de Fabricante e Fornecedor compartilham a mesma tabela, não haverá qualquer conflito com o código Pucomex.\nEssa obrigatoriedade vem de uma exigência direta do Portal Único, conforme orientação repassada pelo time de NPI."
+  },
+  {
+    "pergunta": "Porque o campo país não fica editável na DUIMP?",
+    "causa": "Dúvida",
+    "solucao": "O código do País na DUIMP irá sempre migrar do país do Fabricante Duimp, ele deve ser alimentado no processo de embarque antes de processar a DUIMP."
+  },
+  {
+    "pergunta": "Erro There is an error in XML document (3, 2) ao integrar NF",
+    "causa": "Ao tentar integrar a Nota Fiscal via XML, o sistema retorna o erro There is an error in XML document (3, 2). O que fazer?",
+    "solucao": "Esse erro indica que o XML da NF está com a estrutura incorreta: (linha 3, coluna 2). Isso pode ocorrer por:\n\n- Arquivo XML corrompido ou incompleto;\n-Caracteres inválidos na estrutura do XML;\n- Falta da declaração correta no início do arquivo;\n\nRecomenda-se validar o XML em um validador oficial da SEFAZ ou reexportar o arquivo direto da fonte emissora (sistema contábil, ERP, etc.) antes de realizar a integração novamente."
+  },
+  {
+    "pergunta": "Número de Lacre não aparece no rascunho.",
+    "causa": "Dúvida.",
+    "solucao": "Essa informação não consta por padrão na DI, para adicionar é necessário informar a tag \"{CONTAINERS.LACRE}\" nas informações complementares da DI."
+  },
+  {
+    "pergunta": "Como gerar duas notas para o mesmo produto no processo. ",
+    "causa": "Duvida ",
+    "solucao": "Para que você consiga gerar nota fiscal de um item e conforme a planilha de rateio dividindo esse item em duas notas, precisa no momento de gerar a nota manual selecionar a quantidade de item a ser gerada naquela nota, depois vai fazer o processo para a quantidade de item restantes. \n\n\n\nOutro ponto a se observar as parametrizações de entrada e de saída da nota fiscal, elas precisam estar informadas dentro da aba entrega do processo, e antes de gerar a nota os impostos precisam estar calculados. \n\nPasso para gerar a nota com as quantidades de cada nota. \n\n\n\nVai acessar a rotina de nota fiscal- nova importação- informar processo e parametrização- após isso flegar manual- selecionar o produto e na quantidade alterar para quantidade da nota especifica. "
+  },
+  {
+    "pergunta": "Erro na emissão da previa DANFE",
+    "causa": "Informações faltantes.",
+    "solucao": "No cadastro do fornecedor o campo \"Cidade\" e \"Estado\" não estava informado, e o numero de documento em branco (preencher entre 5 a 20 caracteres)."
+  },
+  {
+    "pergunta": "Senior Sapiens - Transportadora não foi enviada na nota fiscal",
+    "causa": "Transportadora não apareceu no ERP Senior Sapiens no envio da nota",
+    "solucao": "Para resolver o problema basta realizar o de/para da chave do Narwal com o codigo da transportadora do Senior Sapiens"
+  },
+  {
+    "pergunta": "Erro ao enviar NF para o SEFAZ",
+    "causa": "Estou tentando enviar uma NF para o SEFAZ, porém, está retornando o erro \"'dhEmi' no espaço para nome 'http://www.portalfiscal.inf.br/nfe'. \". O que fazer?",
+    "solucao": "Solução paliativa é reiniciar a pool de aplicação."
+  },
+  {
+    "pergunta": "Emissão de relatório.",
+    "causa": "Duvida",
+    "solucao": "Atualmente, o sistema da Narwal não dispõe desse relatório, e a sugestão de melhoria apresentada foi recusada pelo cliente."
+  },
+  {
+    "pergunta": "Contrato de câmbio antecipado não aparece para compensar invoice",
+    "causa": "Foi criado um contrato de câmbio de antecipação ele não aparece para adiantamento manual na invoice",
+    "solucao": "O status do contas a pagar do título de antecipação precisa ser 1 (fechado)"
+  },
+  {
+    "pergunta": "Cliente com mensagem retorno do Sefaz- erro 610 Valor difere do somatório?",
+    "causa": "Duvida ",
+    "solucao": "Nessa situação era uma nota fiscal de ajuste, estorno para o exterior, como notas para exterior não possui destaque de Impostos, deve manter a seguintes informações:\nCFOP 7949-\nCST ICMS 41- NÃO TRIBUTADO \n\nPara o valor de PIS/COFINS, deve destacar ele no totais da nota, que vai totalizar a outras despesas, e informar o CST do importo como 49. \n\nApós os ajustes a nota será autorizada. "
+  },
+  {
+    "pergunta": "Erro IDX_PRODUTO_CHAVE_EMP_FIL ao tentar cadastrar novo produto",
+    "causa": "Ao tentar cadastrar um novo produto, o sistema exibe o erro IDX_PRODUTO_CHAVE_EMP_FIL. O que fazer?",
+    "solucao": "Esse erro geralmente ocorre quando a chave definida para o próximo produto já está sendo utilizada por outro cadastro. Isso está relacionado à variável de ambiente NWL_SEQUENCIALPRODUTO, que controla a numeração automática das chaves de produtos.\n\nPara corrigir, qualquer usuário com acesso à rotina \"Variáveis de Ambiente\" deve verificar o valor atual da variável NWL_SEQUENCIALPRODUTO e atualizá-lo para uma numeração que ainda não esteja em uso no sistema"
+  },
+  {
+    "pergunta": "Sem acesso ao portal",
+    "causa": "Incidente",
+    "solucao": "TI do cliente não deu a devida permissão no firewall."
+  },
+  {
+    "pergunta": "Erro ao tentar acessar URL Narwal \"HTTP Error 503. The service is unavailable.\".",
+    "causa": "Instabilidade no servidor.",
+    "solucao": "Assim que realizamos a tentativa de acesso, foi possível acessar o Narwal normalmente."
+  },
+  {
+    "pergunta": "Falha na integração de pedidos SAP x Narwal",
+    "causa": "Resolvido com KB",
+    "solucao": "Ticket: 54645"
+  },
+  {
+    "pergunta": "erro 'Não é possível deletar a despesa'",
+    "causa": "Ao tentar calcular os impostos do processo, o erro  'Não é possível deletar a despesa' é disparado em tela.",
+    "solucao": "Deve-se cancelar os títulos mencionados pela mensagem de erro."
+  },
+  {
+    "pergunta": "Dúvida quanto a regra do semáforo chegada dos documentos originais e liberação BL",
+    "causa": "Semáforo estava apresentando uma cor divergente da esperada.",
+    "solucao": "A regra do semáforo está presente no manual de semáforo padrão do Narwal."
+  },
+  {
+    "pergunta": "Onde inserir o certificado digital do despachante.",
+    "causa": "Cliente com dúvida em qual rotina deve ser inserido o certificado digital do despachante.",
+    "solucao": "Deve-se inserir o mesmo no cadastro de representante legal, juntamente com a senha de instalação do certificado."
+  },
+  {
+    "pergunta": "Por que o campo \"contrato de cambio\" dentro da forma de pagamento da Invoice não fica preenchido?",
+    "causa": "Dúvida.\n\n",
+    "solucao": "Você consegue visualizar as informações desejadas entrando pelo botão \"visualizar\" na invoice.\n\n"
+  },
+  {
+    "pergunta": "Como definir os valores de impostos da NF-e na integraçao Senior",
+    "causa": "duvida",
+    "solucao": "Ativando a variável de ambiente: NWL_DESATIVARECALCULONFEERP"
+  },
+  {
+    "pergunta": "--",
+    "causa": "--",
+    "solucao": "--"
+  },
+  {
+    "pergunta": "Como editar o deposito da NF-e de envio ao ERP Sênior? ",
+    "causa": "Está informação é configurável através do cadastro de filial ",
+    "solucao": "Está informação é configurável através do cadastro de filial "
+  },
+  {
+    "pergunta": "Integração ocorrendo com duplicidade",
+    "causa": "Verificado que o middleware travou durante um periodo de 5 min ocasionando no envio duplicado da mesma nota de despesas",
+    "solucao": "Adicionado um storage pra verificar se a ultima execução finalizou, se finalizar ele segue pra proxima se não ele para e espera o proximo passo. "
+  },
+  {
+    "pergunta": "erro do cliente, ao fazer processo errado",
+    "causa": "erro do cliente, ao fazer processo errado,",
+    "solucao": "erro do cliente, ao fazer processo errado,"
+  },
+  {
+    "pergunta": "Se considerando o pagamento dois dias após a previsão de chegada/chegada, ele vai atualizando o vencimento automaticamente caso a previsão seja alterada?",
+    "causa": "Dúvida.",
+    "solucao": "A data de vencimento do título do numerário não tem a opção de inserir \"dias após a chegada\" como data de vencimento, é necessário escolher uma data fixa no momento de gerar a parcela.\n\n"
+  },
+  {
+    "pergunta": "O saldo do fornecedor do pedido X não pode ser menor que zero.",
+    "causa": "Ao tentar vincular o item de um processo a uma invoice, o erro de saldo do fornecedor é disparado.",
+    "solucao": "Validar a variável de ambiente NWL_VALIDAQTDDISPFORNEC, se a mesma estiver ativa e o saldo fornecedor do pedido compra item estiver zerado, o erro aparecerá."
+  },
+  {
+    "pergunta": "Chave do Fabricante Não encontrada no Sankhya",
+    "causa": "A chave no cadastro do Fabricante dentro do Narwal não correspondia a um código de parceiro no Sankhya",
+    "solucao": "Alterar a chave do cadastro do fabricante para uma chave válida, ou seja, que corresponda a um parceiro existente e ativo no Sankhya."
+  },
+  {
+    "pergunta": "Acesso Narwal",
+    "causa": "Link da aplicação.",
+    "solucao": "O cliente estava tentando acessar por um link incorreto. Após o envio do endereço correto, o acesso foi realizado com sucesso."
+  },
+  {
+    "pergunta": "Erro 403 Forbidden ao enviar a NFe para o SEFAZ.",
+    "causa": "'The remote server returned an error: (403) Forbidden.'",
+    "solucao": "Certificado digital da filial inválido ou vencido, necessário ajustá-lo."
+  },
+  {
+    "pergunta": "No Processo, menu de ação Documento de Importação/Enviar Impostos: Informe o fornecedor no cadastro do despachante do processo!",
+    "causa": "Dúvida",
+    "solucao": "No cadastro de Despachante, guia Integração informar o fornecedor, nesse caso será o próprio despachante. "
+  },
+  {
+    "pergunta": "Como funciona o fechamento financeiro?",
+    "causa": "Dúvida.",
+    "solucao": "Valor do adiantamento: numerário de nacionalização + câmbio.\nValor pago: despesas do processo.\n\n\n\n"
+  },
+  {
+    "pergunta": "Narwal aceita CNPJ alfanumérico?",
+    "causa": "A partir de Julho de 2026 novas empresas terão CNPJ alfanumérico.",
+    "solucao": "Narwal estará preparado para aceitar CNPJ alfanumérico."
+  },
+  {
+    "pergunta": "SMTP expirado",
+    "causa": "Incidente",
+    "solucao": "Foi necessário solicitar a senha ao cliente. \nRotina: Empresa > Parametros > SMTP."
+  },
+  {
+    "pergunta": "Erro ao tentar excluir despesa.",
+    "causa": "Estava sendo retornado erro informando que o título havia sido baixado, esse erro ocorreu pois o valor do estorno do título não tinha sido correto, ainda assim permanecendo valor baixado.",
+    "solucao": "Foi necessário realizar a baixa do título novamente, e em seguida realizar o estorno. Após essa ação foi possível excluir a despesa."
+  },
+  {
+    "pergunta": "Erro 500 ao acessar o Narwal",
+    "causa": "Estou tentando realizar o login no Narwal, mas ao inserir meus dados e clicar em login, é exibido o erro \"Erro HTTP 500\". O que fazer?",
+    "solucao": "Este caso foi resolvido no ticket 55790."
+  },
+  {
+    "pergunta": "Retorno SEFAZ no envio da NF: NF-e ja esta inutilizada na Base de dados da SEFAZ ",
+    "causa": "Dúvida",
+    "solucao": "Acessar portal NFe e verificar se a numeração que está sendo enviada já consta inutilizada.\nhttps://www.nfe.fazenda.gov.br/ "
+  },
+  {
+    "pergunta": "Erro 500 ao acessar o Narwal",
+    "causa": "Estou tentando realizar o login no Narwal, mas ao inserir meus dados e clicar em login, é exibido o erro \"Erro HTTP 500\". O que fazer?",
+    "solucao": "Este caso foi resolvido no ticket 55790."
+  },
+  {
+    "pergunta": "Como conferir a movimentação bancária?",
+    "causa": "Dúvida.",
+    "solucao": "Há um relatório de movimentação bancária que pode ser impresso para realizar a conferencia."
+  },
+  {
+    "pergunta": "Você não possui acesso ao menu selecionado: Importacao/NPI/IntegrarXmlDuProcesso",
+    "causa": "Falha após atualização",
+    "solucao": "Acessar/Editar Grupo usuário e selecionar a opção  \"Integrar DI/DUIMP\""
+  },
+  {
+    "pergunta": "Resolvido no KB 55896",
+    "causa": "Resolvido no KB 55896",
+    "solucao": "Resolvido no KB 55896"
+  },
+  {
+    "pergunta": "Valor da NF de saída valor divergente.",
+    "causa": "Falha usuário",
+    "solucao": "No Processo, guia Entrega informar a parametrização NF Entrada / Saída."
+  },
+  {
+    "pergunta": "Como configurar a criação automática da despesa \"honorário\"?",
+    "causa": "Dúvida.",
+    "solucao": "Na rotina \"Contrato comissão\" realizamos cadastros de contratos por clientes.\nÉ possível configurar um cálculo para que o honorário seja gerado de forma automática no fechamento financeiro. Basta preencher os campos necessários, salvar e aplicar os requisitos aos processos.\nApós este procedimento, processar os requisitos no fechamento financeiro.\nHabilitei a variável \"NWL_HONORARIOFCH\" para que seja calculados os requisitos.\nCom isso, o valor do honorário irá aparecer no processo e no fechamento."
+  },
+  {
+    "pergunta": "Cliente informando que o processo expo estava vinculando nota de outro processo. ",
+    "causa": "Erro do usuário ",
+    "solucao": "Em auditoria verificamos que a usuária Raquel quem estava integrando o XML da nota no processo expo. "
+  },
+  {
+    "pergunta": "MENSAGEM: 866 - Rejeicao: Ausencia de troco quando o valor dos pagamentos informados for maior que o total da nota",
+    "causa": "Dúvida",
+    "solucao": "Verificar na guia Cobrança se o valor está superior ao total da NF. "
+  },
+  {
+    "pergunta": "Sistema fora do ar",
+    "causa": "O narwal está apresentando apresentando o erro \"HTTP Error 404\" ao acessar. Como posso resolver?",
+    "solucao": "É necessário verificar a pool de aplicação do cliente, dentro do servidor. Caso esteja parada, é necessário entender o que houve. Após iniciar a pool, o sistema voltará ao ar."
+  },
+  {
+    "pergunta": "Como deve ficar a inclusão do frete na incoterm CFR, dentro da DI?",
+    "causa": "Duvida ",
+    "solucao": "Nesse caso o valor do frete ele não ficará lançado no valor do VLME, ele vai estar totalizando ao VMCV. \n\nNa declaração de importação ele vai totalizar ao VMLD. "
+  },
+  {
+    "pergunta": "Erro ao consultar a rotina Simulação de Importação",
+    "causa": "Incidente",
+    "solucao": "Necessário resetar a grid e retirar os filtros aplicamos nas colunas."
+  },
+  {
+    "pergunta": "Tamanho da mensagem excedeu o limite estabelecido",
+    "causa": "Dúvida",
+    "solucao": "Cancelar a NF e gerar novamente a NF. No quadro \"Configurar\" selecionar a opção correspondente de divisão da NF."
+  },
+  {
+    "pergunta": "Lentidão numerário",
+    "causa": "Incidente",
+    "solucao": "Após a reinicialização do servidor o comportamento da aplicação se normalizou."
+  },
+  {
+    "pergunta": "------",
+    "causa": "-----",
+    "solucao": "-------"
+  },
+  {
+    "pergunta": "Erro ao vincular invoice ao processo.",
+    "causa": "Erro de saldo estava ocorrendo por conta que o processo foi criado a partir do pedido, nesse caso a invoice precisa ser criada dentro do processo, ao invés de ser criada a partir do pedido.",
+    "solucao": "Foi necessário cancelar a invoice e cria-la por dentro da rotina \"processo\"."
+  },
+  {
+    "pergunta": "Erro 500 ao acessar o Narwal",
+    "causa": "Estou tentando realizar o login no Narwal, mas ao inserir meus dados e clicar em login, é exibido o erro \"Erro HTTP 500\". O que fazer?",
+    "solucao": "Este caso foi resolvido no ticket 55790."
+  },
+  {
+    "pergunta": "Como resolver o erro de integração \"Tipo de movimento inválido nesta opção.\" de nota com Sankhya?",
+    "causa": "dúvida",
+    "solucao": "É necessário avaliar o tipo da modalidade importação se está de acordo com a configuração da TOP. Quando a modalidade de importação está como \"Encomenda\" enviamos o tipo de movimento como \"V\" no contrario mandamos \"C\"."
+  },
+  {
+    "pergunta": "Como extrair dados de processo via API",
+    "causa": "dúvida",
+    "solucao": "Voce pode extrair os dados do processo de importação atravez do odataProcesso."
+  },
+  {
+    "pergunta": "Rateio do peso bruto divergente na nota fiscal. ",
+    "causa": "Cliente gerando tres notas de nacionalização, porém o peso bruto dos produtos está ficando divergente do processo, e do pedido de compra. ",
+    "solucao": "Como medida contorno, inserimos de forma manualmente na nota fiscal. \n\nOrientamos ao cliente como informar na nota fiscal. "
+  },
+  {
+    "pergunta": "Tipo despesa Diferença de frete não encontrado!",
+    "causa": "Duvida.",
+    "solucao": "O campo \"Taxa pagamento frete\" no processo preenche automaticamente uma despesa referente à diferença de frete. Para que isso ocorra corretamente, é necessário que exista uma despesa configurada com o tipo \"Diferença de frete\" na rotina \"Tipo despesa\". Caso não haja essa despesa configurada, o erro será gerado. Se o campo \"Taxa pagamento frete\" estiver preenchido e a informação estiver correta, será preciso criar a despesa com o tipo correspondente. Caso contrário, basta remover o valor do campo"
+  },
+  {
+    "pergunta": "Resolvido no KB 55911",
+    "causa": "Resolvido no KB 55911",
+    "solucao": "Resolvido no KB 55911"
+  },
+  {
+    "pergunta": "Erro \"Usuário sem permissão para realizar essa operação\" ao integrar DI/DUIMP",
+    "causa": "Ao tentar integrar uma DI, ao clicar em \"Processar\", aparece a mensagem de erro: \"Usuário sem permissão para realizar essa operação\". Como posso resolver isso?",
+    "solucao": "Acesse a rotina \"Administração -> Grupo de Usuário\" e verifique se o grupo de usuários vinculado possui o parâmetro de permissão \"Integra DI/DUIMP\" habilitado. Caso não esteja habilitado, ative esse parâmetro para permitir a operação."
+  },
+  {
+    "pergunta": "Erro 500 ao acessar o Narwal",
+    "causa": "Estou tentando realizar o login no Narwal, mas ao inserir meus dados e clicar em login, é exibido o erro \"Erro HTTP 500\". O que fazer?",
+    "solucao": "Este caso foi resolvido no ticket 55790."
+  },
+  {
+    "pergunta": "Como fazer com que o valor dos produtos se iguale a base de ICMS?",
+    "causa": "Dúvida.",
+    "solucao": "Os valores da Base de ICMS e total dos produtos ficaram de acordo após inserir na parametrização a TAG {baseicms} no total dos produtos, na parametrização.\n\n"
+  },
+  {
+    "pergunta": "Erro 500 ao acessar o Narwal",
+    "causa": "Estou tentando realizar o login no Narwal, mas ao inserir meus dados e clicar em login, é exibido o erro \"Erro HTTP 500\". O que fazer?",
+    "solucao": "Este caso foi resolvido no ticket 55790."
+  },
+  {
+    "pergunta": "Erro ao integrar a DUIMP no processo impo.",
+    "causa": "Erro 'Sequence contains no matching element' ao integrar a DUIMP no processo.",
+    "solucao": "Deve-se associar o item do processo corretamente."
+  },
+  {
+    "pergunta": "Erro SQL - Baixa de Título",
+    "causa": "Erro no select do addon que continha uma palavra reservada.",
+    "solucao": "Corrigo SQL."
+  },
+  {
+    "pergunta": "Envio de follow desnecessário",
+    "causa": "Duvida",
+    "solucao": "Follow up em questão estava ativa incorretamente, sendo assim enviando follows desnecessários."
+  },
+  {
+    "pergunta": "Erro ao tentar cadastrar usuário em portal do cliente",
+    "causa": "dúvida",
+    "solucao": "Usuário estava tentando cadastrar o \"usuário\" de acesso com o proprio e-mail informado, porém, no portal do cliente, não se permite nome de usuário com quantidade superior de 30 caracteres, dessa forma, cadastrado apenas o sufixo do usuário e seu sobrenome, obtido sucesso."
+  },
+  {
+    "pergunta": "Processo não aparece na grid de consultas da rotina \"Declaração de Importação\"",
+    "causa": "Ao tentar buscar um processo na grid de consultas da rotina \"Declaração de Importação\", ao clicar em \"Consultar\", o processo não é retornado. O que devo fazer?\n",
+    "solucao": "Primeiramente, verifique se o processo está faltando apenas para um usuário específico. Caso seja esse o problema, a solução é resetar a grid de consulta, o que irá restaurar o estado inicial da busca. Após realizar o reset da grid, tente realizar a consulta novamente para verificar se o processo é retornado corretamente."
+  },
+  {
+    "pergunta": "Como gerar NFSe Expo com serviço?",
+    "causa": "Dúvida.",
+    "solucao": "Adicionado serviço no contrato de comissão\nAba \"Serviços\" da rotina \"Fechamento Financeiro\"\nClicar em \"Processar contrato\"\nAba \"Fechamento financeiro\" e \"Gerar parcela\";\nE o pedido será gerado com o valor do serviço do processo"
+  },
+  {
+    "pergunta": "Mensagem ao enviar NF para SEFAZ: Rejeicao: Valor do Produto difere do produto Valor Unitario de Tributacao e Quantidade Tributavel",
+    "causa": "Dúvida",
+    "solucao": "A mensagem de rejeição do SEFAZ está ocorrendo pois na NF não consta a informação da Unidade tributável.\n\nVocê poderá informar manualmente, para isso:\n\n1-Editar a NF;\n2- Na guia Produto, editar a o produto;\n3- Na guia Informações informar o Valor e Quantidade;  \n\nPara que o campo seja preenchido automaticamente para as próximas notas, você poderá cadastrar a \"Conversão de Unidade de medida\"."
+  },
+  {
+    "pergunta": "Campo oculto.",
+    "causa": "Campo oculto pelo usuário admin",
+    "solucao": "desocultar o campo."
+  },
+  {
+    "pergunta": "Por qual motivo o botão \"Cancelar pedido de compra\" do pedido de compra está inativo.",
+    "causa": "Pedido de compra já encontra-se fechado.",
+    "solucao": "Pedido de compra está com status Fechado."
+  },
+  {
+    "pergunta": "Lentidão geral!",
+    "causa": "Resolvido com KB",
+    "solucao": "Ticket: 55930"
+  },
+  {
+    "pergunta": "Erro ao acessar o portal do cliente",
+    "causa": "Ao acessar o portal do cliente, a página não abre.",
+    "solucao": "Cliente estava utilizando o link incorreto da aplicação."
+  },
+  {
+    "pergunta": "Processo (expo) não retorna na grid.",
+    "causa": "Isso ocorre por dois motivos, o processo pode ter sido inativado sem querer, ou o filtro de pesquisa não estar de acordo.",
+    "solucao": "O filtro do processo não estava de acordo, estava para trazer apenas processos com a \"posição do processo\" como em \"transito\"."
+  },
+  {
+    "pergunta": "Mensagem do Totvs: Exportador não encontrado! EXPORTADOR=",
+    "causa": "Erro estava ocorrendo ao tentar realizar o envio da NF para o ERP.",
+    "solucao": "Após reiniciar o sistema foi possível realizar o envio da Nota."
+  },
+  {
+    "pergunta": "Botão de excluir despesas do processo não está sendo exibido.",
+    "causa": "Estou tentando excluir algumas despesas de um processo de importação, mas o ícone de exclusão (\"X\") não está aparecendo. O que posso fazer?",
+    "solucao": "O ícone de exclusão de despesas não é exibido porque há uma ou mais parcelas geradas na rotina de \"Fechamento Financeiro\". Para resolver isso, siga os passos abaixo:\n\nPrimeiro, acesse a rotina de \"Fechamento Financeiro\" e localize o fechamento financeiro relativo ao processo em questão. Dentro dessa rotina, exclua a parcela gerada e, em seguida, clique em \"Salvar\" para registrar a alteração. Após salvar, retorne à aba de despesas do processo, e o ícone de exclusão será exibido, permitindo que você exclua as despesas conforme necessário.\n\nEsse procedimento deve resolver o problema e permitir a exclusão das despesas do processo de importação."
+  },
+  {
+    "pergunta": "Não estou recebendo o código de acesso",
+    "causa": "Resolvido no KB 53880",
+    "solucao": "Resolvido no KB 53880"
+  },
+  {
+    "pergunta": "Cliente com erro ao enviar nota para prefeitura. ",
+    "causa": "Cliente com registro de notas na prefeitura, estava dando instabilidade de certificado. ",
+    "solucao": "Verificou que o certificado no site da prefeitura estava divergente, pois foi renovado não foi trocado. \nApós fazer alterações notas saíram de acordo. "
+  },
+  {
+    "pergunta": "Erro ao integrar XML da DI",
+    "causa": "Estou tentando integrar uma XML da DI, mas está dando erro de permissão \"Você não possui acesso ao menu selecionado: Importação/NPI/IntegrarXmlDiProcesso. O que fazer?",
+    "solucao": "KB no chamado 55672"
+  },
+  {
+    "pergunta": "Porque ao enviar a NF ao Senior, retorna erro que a transação exige uma parcela?",
+    "causa": "Chamado 55817",
+    "solucao": "Isso ocorre porque a transação utilizada exige que seja informada uma condição de pagamento, pois no fluxo do Senior, após a emissão da nota fiscal, deve-se gerar um titulo efetivo de câmbio.\n\nNo caso do Narwal, esse titulo irá ser integrado após, via contas á pagar, atualizado com a taxa da DI.\n\nSolução é solicitar ao consultor Senior remover obrigatoriedade da Transação ou informar na aba Cobrança do NArwal, a condição de pagamento no rodapé da tela."
+  },
+  {
+    "pergunta": "Erro 403 forbidden ao acessar a API",
+    "causa": "Os endereços do cliente não estavam liberado para acesso a API.",
+    "solucao": "Aberto chamado com o time de infra (Narwal) para liberação."
+  },
+  {
+    "pergunta": "Como remover/abrir/fechar um período financeiro?",
+    "causa": "Ao dar baixa em um título, ocorre um erro em que período de fechamento financeiro está fechado.",
+    "solucao": "Precisa verificar o cadastro da conta bancária na rotina \"Fechamento período financeiro\"."
+  },
+  {
+    "pergunta": "Mensagem ao enviar NF: Informe o Estado do local de desembaraço do item 1",
+    "causa": "Dúvida",
+    "solucao": "Na Nota Fiscal, guia Transporte verificar a Origem destino. Verificar na rotina Origem destino se o Estado está informado. "
+  },
+  {
+    "pergunta": "Credito presumido não estava puxando na nota. ",
+    "causa": "Erro do usuário, ao preencher as parametrizações corretas. \n",
+    "solucao": "Cliente ativou a variável NWL_CALCULOCREDITOPRESUMIDO após gerar a nota fiscal, dessa forma as informações do credito presumido, não vieram informadas no XML. \n\nCancelei a nota e gerei novamente veio de acordo. "
+  },
+  {
+    "pergunta": "Por que não estou conseguindo integrar XML da DI?",
+    "causa": "Dúvida.",
+    "solucao": "O arquivo a ser integrado deve ser um XML. PDF ou outros formatos não serão aprovados pelo Narwal."
+  },
+  {
+    "pergunta": "Os 3 campos de descrição da planilha de inserção de produtos no processo devem estar preenchidos?",
+    "causa": "Os 3 campos de descrição, tem que estar preenchidos na planilha para que ela possa ser integrada, faltou preencher o campo descrição completa que na planilha é \n\n \n\n\n",
+    "solucao": "Os 3 campos de descrição, tem que estar preenchidos na planilha para que ela possa ser integrada, faltou preencher o campo descrição completa que na planilha é \n\n \n\n\n"
+  },
+  {
+    "pergunta": "Novas parcelas Numerario",
+    "causa": "Cliente precisa criar uma nova parcela no numerário, porém o botão gerar uma nova some.",
+    "solucao": "Necessário enviar a parcela já aberta para o ERP ou baixa-la, assim liberando o botão novamente."
+  },
+  {
+    "pergunta": "Erro de Chave Duplicada ao Cadastrar Produto",
+    "causa": "Ao tentar cadastrar um produto, aparece a mensagem de erro: \"Não é possível inserir uma linha com chave duplicada no objeto 'dbo.Produto' devido ao índice único 'IDX_PRODUTO_CHAVE_EMP_FIL'\". O que fazer para resolver esse problema?",
+    "solucao": "Esse erro ocorre quando, anteriormente, a variável NWL_SEQUENCIALPRODUTO estava ativa, garantindo que a chave do produto seguisse um padrão específico. Quando essa variável foi desativada, o sistema tentou cadastrar novos produtos, mas a chave gerada já estava registrada no banco de dados. Para resolver, basta seguir os passos abaixo:\n\n- Localize a chave do produto mencionada na mensagem de erro.\n\n- Altere a chave para um valor aleatório (certifique-se de que a chave não esteja em uso).\n\nApós realizar essa alteração, os próximos produtos cadastrados seguirão a sequência correta e o erro não ocorrerá mais.\n\nEsse procedimento garante que a chave dos produtos seja única, evitando conflitos futuros."
+  },
+  {
+    "pergunta": "Erro 500 ao acessar o narwal",
+    "causa": "Estou tentando realizar o login no Narwal, mas ao inserir meus dados e clicar em login, é exibido o erro \"Erro HTTP 500\". O que fazer?",
+    "solucao": "Esse erro foi corrigido em versões superiores à 2024.4.8.0. Para resolver, recomendamos atualizar para uma versão mais recente. Como alternativa, você pode contornar o problema enviando um link de redefinição de senha através da rotina \"Usuário\".\n\nÉ importante observar que, se você optar por enviar o link de redefinição de senha diretamente pela tela de login clicando em \"Esqueci minha senha\", o erro continuará ocorrendo ao tentar acessar, portanto, essa opção não resolverá o problema permanentemente."
+  },
+  {
+    "pergunta": "Resolvido com KB",
+    "causa": "Resolvido com KB - chamado: 53613",
+    "solucao": "Resolvido com KB - chamado: 53613"
+  },
+  {
+    "pergunta": "Narwal fora do ar",
+    "causa": "Usuario ISS",
+    "solucao": "Identificado pelo TI do cliente que o usuario tinha expirado a senha, após realizar a troca o mesmo voltou a funcionar."
+  },
+  {
+    "pergunta": "Por que não está aparecendo para selecionar o relatório customizado no fechamento financeiro?",
+    "causa": "Ao imprimir o relatório de conferência de fechamento, o Narwal abre automaticamente o relatório .aspx ao invés de aparecer para selecionar o relatório personalizado.",
+    "solucao": "Para que seja possível utilizar os relatórios personalizados na rotina de fechamento financeiro, deve-se primeiramente ativar a variável de ambiente \"NWL_IMPRIMIRNOVOFECHAMENTOFINANCEIRO\"."
+  },
+  {
+    "pergunta": "Ao gerar prévia da Nota Fiscal está gerando a mensagem \"Informe o Estado do local de desembaraço do item 1\"",
+    "causa": "Dúvida",
+    "solucao": "Editar a Nota Fiscal e na guia Importação, verificar o local do Desembaraço.\nAcessar a rotina \"Origem destino\" procurar pelo local do desembaraço e informar o Estado."
+  },
+  {
+    "pergunta": "Processo com duas adições e apenas uma LI",
+    "causa": "Estou com um processo que possui duas adições, mas apenas uma Licença de Importação (LI) vinculada. Como posso corrigir essa situação?",
+    "solucao": "Os dois itens estavam sendo separados por causa da ausência do part number cadastrado em um deles. Após o cadastro correto, o narwal passou a agrupar os itens sob a mesma LI."
+  },
+  {
+    "pergunta": "Erro de saldo ao tentar cancelar processo.",
+    "causa": "Havia 2 processos vinculados ao mesmo pedido, ambos os processos estavam consumindo a quantidade do total do pedido, assim ficando com saldo negativo.",
+    "solucao": "Foi necessário excluir os itens de um dos processos, e adicionar novos itens, assim permitindo cancelar os processos."
+  },
+  {
+    "pergunta": "No processo/Integrar DI o botão Processar não está visível para os usuários.",
+    "causa": "Duvida",
+    "solucao": "O botão Processar está com a coloração azul clara, nesse caso está visível apenas para os usuários que no cadastro de usuário esteja com campo \"Permitir obrigar campos\" selecionado. Para demais usuários que não tenham permissão, o botão estará oculto."
+  },
+  {
+    "pergunta": "Qual usuário que estava reabrindo os processos fechados? ",
+    "causa": "Duvida ",
+    "solucao": "Ao  realizar uma auditoria, verifiquei que era usuário Rhaphael, que estava com os dados da Ventisol. "
+  },
+  {
+    "pergunta": "Estorno de NF complementar",
+    "causa": "Como posso realizar o estorno de uma nota fiscal complementar?",
+    "solucao": "O estorno deve ser realizado via banco, pois será necessário desvincular a NF complementar das adições."
+  },
+  {
+    "pergunta": "Por que os impostos não estão de acordo com a DI?",
+    "causa": "Dúvida.",
+    "solucao": "O Valor CIF estava incorreto devido a um erro de conversão ao integrar o XML. Após ML integrado novamente, os valores ficaram ok."
+  },
+  {
+    "pergunta": "Como acompanho o andamento de minha solicitação F08?",
+    "causa": "De que forma posso acompanhar o progresso da minha solicitação de melhoria (F08)?",
+    "solucao": "Ao encerrar um chamado de melhoria (F08), é fundamental comunicar ao cliente que, após o fornecimento do ID da solicitação, o acompanhamento do status da mesma deverá ser realizado diretamente por meio do e-mail servicoscomplementares@narwalsistemas.com.br, informando o respectivo ID da solicitação."
+  },
+  {
+    "pergunta": "Reiniciar Pool aplicação",
+    "causa": "Incidente",
+    "solucao": "Reiniciar Pool aplicação"
+  },
+  {
+    "pergunta": "Verificar o motivo das nomenclaturas de despesa, não aparece para usuário?",
+    "causa": "Duvida",
+    "solucao": "Verifiquei que no cadastro de usuário não estava com a tag flegada de administrador, para outros usuários do grupo financeiro, estava flegada e as despesas estavam de acordo. "
+  },
+  {
+    "pergunta": "Duvida no calculo de rateio dos produtos",
+    "causa": "Duvida do usuário",
+    "solucao": "Usuário conferiu errado os valores total do rateio"
+  },
+  {
+    "pergunta": "Código: IPM002 - O nome do país do tomador informado está errado: BRAZIL",
+    "causa": "Ao enviar a NFSE para a prefeitura o erro 'Código: IPM002 - O nome do país do tomador informado está errado: BRAZIL' é disparado em tela.",
+    "solucao": "Foi analisado que o problema em questão estava ocorrendo devido ao município informado no cadastro do cliente, que estava incorreto."
+  },
+  {
+    "pergunta": "Erro ao enviar DI para analise. \"PESO LIQUIDO - DIFERENTE DO SOMATORIO DO PESO LIQUIDO DAS MERCADORIAS\"",
+    "causa": "O problema estava sendo causado pois havia divergencia entre o peso liquido da LI e o peso liquido na declaração de importação.",
+    "solucao": "Cliente seguiu com o ajuste manualmente."
+  },
+  {
+    "pergunta": "Por qual motivo o rateio dos imposto pode estar incorreto?",
+    "causa": "Dúvida.",
+    "solucao": "O rateio da despesa interfere no seu cálculo.\nDeve-se ser ajustado no tipo despesa."
+  },
+  {
+    "pergunta": "Erro ao tentar autorizar NF no sefaz.",
+    "causa": "Erro: The 'http://www.portalfiscal.inf.br/nfe:nAdicao' element is invalid - The value '0' is invalid according to its datatype 'String' - The Pattern constraint faild.\n\nErro ocorre pois o numero das adições estava com o valor '0'.",
+    "solucao": "Necessário processar a DI para gerar as adições, assim que gerada as adições é necessário cancelar a NF e gera-la novamente."
+  },
+  {
+    "pergunta": "Porque não estou recebendo o código de autenticação para realizar o login?",
+    "causa": "Estou tentando fazer o login, mas não estou recebendo o código de autenticação de 2 fatores.",
+    "solucao": "Peça ao cliente para verificar as pastas de spam e lixo eletrônico, garantindo que o e-mail com o código não foi filtrado. Além disso, confirme se outros usuários estão recebendo o código normalmente. Se apenas um usuário não estiver recebendo, pode haver um bloqueio no e-mail dele ou o código pode ter sido redirecionado para a pasta de spam ou lixo eletrônico."
+  },
+  {
+    "pergunta": "Usuários externos sem acesso após atualização para R2.1.2",
+    "causa": "dúvida",
+    "solucao": "Para os clientes que já utilizam seu próprio SMTP na sua base Narwal, por algum motivo na versão R2, os usuários externos estão perdendo acesso.\nFoi necessário recolocar o email e senha da Narwal para recuperar o acesso dos usuários.\nImportante entrar em contato com Suporte Narwal para apoio."
+  },
+  {
+    "pergunta": "SAP B1 - Envio da invoice apenas com um item na linha",
+    "causa": "Ao enviar a invoice foi notado que está apenas com um item na linha e tem mais itens na fatura, isso é um erro? O valor está correto! Apenas não apareceu os itens.",
+    "solucao": "​Sim, hoje nas integrações de adiantamento ao fornecedor com o SAP B1, nos enviamos o valor total no primeiro item e enviamos apenas uma linha. Isso foi uma recomendação da propria SAP para que os valores ficassem corretos, pois quando faziamos o rateio por item o SAP recalculava e gerava um valor final incorreto!"
+  },
+  {
+    "pergunta": "Processo expo, estava permitindo salvar os processos mesmo que o analista não estivesse preenchido?",
+    "causa": "Mesmo deixando o campo como obrigatório, ao salvar o processo não estava pedindo que o campo fosse preenchido, deixando salvar o processo. ",
+    "solucao": "Feita uma auditoria e foi identificado que o campo foi preenchido como obrigatório no dia 02/04, sendo assim os processos anteriores não solicitou pois não estava como obrigatório. \n\nOutro ponto é a flag de permitir e obrigar campo, quando flegada permite que o processo salve sem a informação, quando está sem a flag ao salvar o processo solicita o preenchimento do analista ao salvar. "
+  },
+  {
+    "pergunta": "Dúvida na composição do cálculo da NF de saída",
+    "causa": "Dúvida",
+    "solucao": "baixo os pontos em que a flag IPI na Base do ICMS impacta quando marcado (true) e desmarcado(false).\n\n \n\n1 -  Caso true, Adiciona o ValorIpi no ValorBaseIcms\n\n2 - Caso true e o item seja Consumo interno, ele calcula o ValorBaseIpi = ValorSubTotal / (1 - TaxaIcms / 100 * (1 + TaxaIpi / 100)), e então ele seta no ValorBaseIcms o ValorBaseIpi + ValorIpiSaida.\n\n3 - Caso false, Ele soma o ValorIpiSaida na BaseCustoTotal.\n\n4 - Caso for Conta e Ordem, a flag falsa e se Credita Ipi, ele remove do base custo o ValorIpiSaida.\n\n5 - Caso true adiciona o ValorIpi no ValorSubTotal."
+  },
+  {
+    "pergunta": "Por que a despesa de Antidumping está sendo criada de forma automática?",
+    "causa": "Dúvida.",
+    "solucao": "A variável NWL_CRIADESANTIDUMPING\t de ambiente estava habilitada."
+  },
+  {
+    "pergunta": "Invalid OFX file ao integrar arquivo na rotina extrato bancário.",
+    "causa": "Ao tentar integrar o arquivo na rotina extrato bancário, o erro 'Invalid OFX file' é disparado.",
+    "solucao": "Na rotina extrato bancário somente é possível integrar arquivos .OFX (tipo de arquivo digital que armazena informações financeiras, como extratos bancários)."
+  },
+  {
+    "pergunta": "Integrar XML de DI no processo: Você não possui acesso ao menu selecionado: Importacao/NPI/IntegrarXMLDIProcesso",
+    "causa": "Incidente",
+    "solucao": "Acessar Grupo de usuário e selecionar o campo \"[x] Integrar DI/DUIMP\"."
+  },
+  {
+    "pergunta": " ERRO INTEGRAÇÃO XML NF",
+    "causa": "incidente",
+    "solucao": "Nesse caso foi uma instabilidade pois logo após o erro cliente conseguiu integrar o xml corretamente"
+  },
+  {
+    "pergunta": "Token de autenticação",
+    "causa": "Incidente",
+    "solucao": "Por conta da atualização realizada na ultima semana, acabou perdendo o token de autenticação, informamos novamente e a integração deve voltar a ocorrer."
+  },
+  {
+    "pergunta": "Por que o digito de origem da ntoa saiu divergente do cadastro produto?",
+    "causa": "Duvida ",
+    "solucao": "Dentro da parametrização utilizada consta o digito de origem como 6, por isso a divergência na nota fiscal. Lembrando que as informações de CST e digito de origem da nota elas puxam da parametrização da NF. "
+  },
+  {
+    "pergunta": "Erro do cliente",
+    "causa": "Erro do cliente",
+    "solucao": "Erro do cliente"
+  },
+  {
+    "pergunta": "rotina \"Eventos de Integração - Pedido de Compras\"",
+    "causa": "Duvida",
+    "solucao": "Rotina Descontinuada.\n\nA rotina para consultas de logs de integração é:\nQuando Fluid: Evento de Integração\nAlguns ERP padrão: Evento de Integração\nAPI Padrão: Evento do Contas á Pagar\nAlgunas ERP padrão, fluxo antigo: Evento do Contas á Pagar"
+  },
+  {
+    "pergunta": "-",
+    "causa": "-",
+    "solucao": "-"
+  },
+  {
+    "pergunta": "Por que o valor do fechamento financeiro está divergente da DI? ",
+    "causa": "Dúvida.",
+    "solucao": "Foi realizado \"ajustes\" manuais pelo cliente, por esse motivo os valores não ficaram de acordo. Nesse caso, deve-se realizar os cálculos e validar se há algum valor faltando no processo, realizar auditorias para entender se ele foi retirado. "
+  },
+  {
+    "pergunta": "SMTP Cliente",
+    "causa": "Após a atualização do sistema versão 2025.2.1.2 o SMTP do Cliente parou de funcionar.",
+    "solucao": "Colocado o SMTP da Narwal."
+  },
+  {
+    "pergunta": "Como validar cliente sem acesso ao narwal",
+    "causa": "Neste caso, o cliente estava enfrentando dificuldades ao acessar o Narwal, pois a página caía sempre que realizava o login",
+    "solucao": "Neste caso específico, enviei um link interno de redefinição de senha do Narwal. Com isso, o cliente conseguiu redefinir a senha e continuar o processo normalmente"
+  },
+  {
+    "pergunta": "valor do IPI não compondo base de calculo ICMS",
+    "causa": "Duvida-  Chamado 555552",
+    "solucao": "Para solucionar a situação, a configuração necessária esta na sua Parametrização NF para Processos de Conta e Ordem\n\nCampo ICMS > Flag \"IPI na Base ICMS\""
+  },
+  {
+    "pergunta": "Corrigido internamente pelo cliente",
+    "causa": "Corrigido internamente pelo cliente",
+    "solucao": "Corrigido internamente pelo cliente"
+  },
+  {
+    "pergunta": ".",
+    "causa": ".",
+    "solucao": "."
+  },
+  {
+    "pergunta": "Como fazer a vinculação de pagamento no extrato bancário?",
+    "causa": "Duvida ",
+    "solucao": "Para o extrato bancário. \n\nAcessar o menu: Financeiro > Extrato Bancário > “Informar Conta Bancária” > Clicar em “Selecionar” para buscar o arquivo > Clicar no botão “Processar Arquivo”\n\nFeito isso, aparecerá o extrato e os valores sinalizados em “VERMELHO” referem-se aos títulos não conciliados ou não lançados no sistema, já os sinalizados em “AZUL” são os valores já conciliados.\n\nDe acordo com os valores listados, saberemos se são créditos ou débitos para assim acessarmos as rotinas correspondentes, Contas a Pagar, a Receber ou Movimentação Bancária para identificarmos se os títulos estão inseridos e baixados de forma correta no sistema, ver item 2, 3 e 4 a seguir.\nSerá possível neste momento registrar lançamentos de ‘movimentação bancaria’ dos valores sinalizados em “VERMELHO” para finalizar a conciliação bancária. Para isso preecher os campos manualmente conforme abaixo ou ‘vincular’ um lançamento já realizado e conciliar manualmente.\n\nAo ‘salvar’ uma conciliação bancária (integração do extrato bancário), irá aparecer a mensagem perguntando se deseja fechar o período financeiro.\nConfirmar: irá realizar o fechamento automaticamente;\nCancelar: não irá realizar o fechamento automaticamente. Nesse caso, ele precisará ser fechado depois manualmente direto na rotina de Fechamento período financeiro.\n\nA rotina de conciliação será executada mesmo se não ocorrer o fechamento do período.\n\n1. Contas a pagar\nAcessar: Financeiro > Contas a Pagar > Filtrar por “Data de vencimento” e “Filial” > Clicar em “Consultar”\n\nAo localizar o valor a ser conciliado e o mesmo não estiver com status “baixado”, realizar a baixa do valor. Feita a baixa, voltar na tela de “Extrato Bancário” e clicar em voltar para selecionar novamente o extrato e processar o arquivo novamente. Notará que o valor baixado será puxado na cor “AZUL”.\n\n2. Contas a receber\nAcessar: Financeiro > Contas a Receber > Filtrar por “Data de vencimento” e “Filial” > Clicar em “Consultar”.\nInforme a data de vencimento e conta bancária de acordo com o extrato bancário.\n\nAo localizar o valor a ser conciliado e o mesmo não estiver com status “baixado”, realizar a baixa do valor. Feita a baixa, voltar na tela de “Extrato Bancário” e clicar em voltar para selecionar novamente o extrato e processar o arquivo novamente. Notará que o valor baixado será puxado na cor “AZUL”.\n"
+  },
+  {
+    "pergunta": "Porque meu XML da DI está com erro de arquivo?",
+    "causa": "Resolução chamado 55585",
+    "solucao": "É importante que a estrutura do XML esteja de acordo com a aceita, sem nenhum dado corrompido.\nNo caso desse chamado o xml enviado pelo consultor estava corrompido, foi possível verificar isso tanto abrindo o próprio xml, aonde é possível ver erro de \"This page contains the following errors\""
+  },
+  {
+    "pergunta": "Como conceder permissão aos usuários.",
+    "causa": "Usuário não possui acesso a rotina e gostaria que fosse liberado.",
+    "solucao": "Acessar a rotina \"Grupo usuário\" e escolher o grupo ao qual o usuário está vinculado. Assim que identificado, editar e marcar a flag da rotina que deseja liberar o acesso."
+  },
+  {
+    "pergunta": "Nota fiscal é enviada ao Sênior e permanece como não enviada",
+    "causa": "Timeout na da request da resposta do Senior para o Narwal.",
+    "solucao": "Timeout na da request da resposta do Senior para o Narwal."
+  },
+  {
+    "pergunta": "Lentidão geral",
+    "causa": "Resolvido com KB",
+    "solucao": "Ticket: 55930"
+  },
+  {
+    "pergunta": "Erro na URL ao logar via SSO.",
+    "causa": "Ao tentar realizar o login via SSO no Narwal, o seguinte erro é informado na URL:\nerrormessage=\"OpenIdConnectMessage.Error%20was%20not%20null,%20indicating%20an%20error.%20Error:%20%27invalid_client%27",
+    "solucao": "A client secret expirou, deve-se gerar uma nova e alterá-la no web.config."
+  },
+  {
+    "pergunta": "Numerário de Nacionalização Não Aparece no Contas a Receber",
+    "causa": "Numerário de Nacionalização Não Aparece no Contas a Receber",
+    "solucao": "Não está gerando um título a receber, pois não há uma operação financeira de \"Numerário câmbio receber\" cadastrado para essa filial.\nSugiro que em \"Operação financeira\" você duplique o cadastro 19 e selecione a filial desejada.\nApós esse procedimento, salve o numerário de câmbio, e o respectivo contas a receber será gerado automaticamente.\n\n\n"
+  },
+  {
+    "pergunta": "Documentos faltantes nos processos.",
+    "causa": "Ao abrir os processos, os documentos sumiram.",
+    "solucao": "Validar se a variável de ambiente NWL_ROOTGESTAODOCS está apontando para o local correto no servidor, e se existe a pasta do processo com os docs."
+  },
+  {
+    "pergunta": "Lentidão aba Numerario",
+    "causa": "Resolvido com KB",
+    "solucao": "Ticket: 55930"
+  },
+  {
+    "pergunta": "Mensagem \"Informe o campo NCM\" ao integrar o xml da DI no processo.",
+    "causa": "Incidente",
+    "solucao": "No cadastro NCM campo Chave alterar conforme campo \"Código NCM\"; ou Acessar o processo e alterar as informações manualmente, conforme o xml da DI."
+  },
+  {
+    "pergunta": "Somar a despesas Taxa Siscomex na Nota Fiscal de saída.",
+    "causa": "Fora de escopo",
+    "solucao": "A despesa \"Taxa siscomex\" já entra na NF de entrada por essa ser devida no ato de registro da Declaração de Importação (DI).\nPara que essa despesa seja somado ao valor do produto e base de cálculo do ICMS deverá se inserido a despesa na guia Totais da NF de saída."
+  },
+  {
+    "pergunta": "Não está listando o menu com as rotinas.",
+    "causa": "Dúvida",
+    "solucao": "Configurar Zoom a 100% "
+  },
+  {
+    "pergunta": "Erro ao enviar nota fiscal de entrada para o ERP ",
+    "causa": "ERRo \"Internal error (-5002)\"",
+    "solucao": "O incidente ocorreu devido a uma divergência entre a chave de despesa da nota fiscal e o mapeamento de de/para no SAP"
+  },
+  {
+    "pergunta": "Erros de Validação ao Gerar DI",
+    "causa": "Estou enfrentando problemas ao gerar a DI. Estão sendo exibidos os seguintes alertas:\n\n- ValorTotalMLEMoedaNacional: O campo deve ser numérico.\n\n- ValorUnidadeLocalEmbarque: O campo deve ser numérico.\n\nO que devo fazer para resolver?",
+    "solucao": "Essas mensagens indicam que o valor total da mercadoria está negativo. Para resolver o problema, siga os passos abaixo:\n\n1. Verifique o VMLE: Acesse a aba \"Produtos\" do processo e analise o valor do VMLE. Caso o valor esteja negativo, investigue a causa.\n\n2. Revise o Incoterm: Muitas vezes, esse erro ocorre devido ao Incoterm utilizado na invoice. No caso específico, o CFR (Cost and Freight) foi utilizado.\n\n3. O Incoterm CFR estabelece que o vendedor paga o frete até o porto de destino, mas o valor do frete não pode ser incluído no valor da mercadoria.\n\n4. Ajuste na Invoice: Para corrigir, acesse a invoice e desmarque a opção \"Frete Incluso\". Em seguida, atribua manualmente o valor do frete com base no peso bruto da mercadoria.\n\n5. Recalcule o VMLE: Após realizar o ajuste no valor do frete, o VMLE deverá ficar positivo, permitindo o registro da DI.\n\nSe o erro persistir após essas etapas, entre em contato com o suporte para mais assistência."
+  },
+  {
+    "pergunta": "--",
+    "causa": "--",
+    "solucao": "--"
+  },
+  {
+    "pergunta": ".",
+    "causa": ".",
+    "solucao": "."
+  },
+  {
+    "pergunta": "Erro ao tentar excluir invoice \"Não é possível excluir a informação devido ao vinculo -> FK_dbo.NotaFislcaDespesaProduto_dbo.ItemProcesso\".",
+    "causa": "Quando é retornado esse erro ao tentar excluir a invoice, é por conta que o processo possui NF despesa vinculado.",
+    "solucao": "Necessário cancelar as despesas criadas na rotina \"Nota fiscal despesa\", após excluir é possível cancelar a invoice."
+  },
+  {
+    "pergunta": "Por que o valor de ICMS está incorreto?",
+    "causa": "Dúvida.",
+    "solucao": "Parametrização estava com a fórmula incorreta."
+  },
+  {
+    "pergunta": "Valor do produto na Nota Fiscal de anulação estava divergente da NF original. ",
+    "causa": "Dúvida",
+    "solucao": "Na Nota Fiscal de anulação, guia Totais  não constava as despesas;"
+  },
+  {
+    "pergunta": "Erro ao consultar o Siscarga – \"Dados do BL informado não encontrados\"",
+    "causa": "Ao tentar realizar uma consulta no Siscarga via Narwal, é exibida a seguinte mensagem de erro:\n\"Dados do BL informado não encontrados. Verifique se a sincronização das cargas do importador está habilitada.\"\nO que deve ser feito para resolver esse problema?",
+    "solucao": "Causa:\nEsse erro geralmente ocorre quando a variável de ambiente NWL_LINKJOBAPI está configurada incorretamente. Ela deve conter a URL correta de acesso ao portal — seja local ou externa.\n\nSolução:\nVerifique se houve alguma migração recente de servidores. Em muitos casos, a variável NWL_LINKJOBAPI não é atualizada para refletir o novo ambiente, resultando nesse erro.\n\nPara resolver:\n\n1. Acesse o ambiente onde o Narwal está configurado.\n\n2. Verifique o valor da variável NWL_LINKJOBAPI.\n\n3. Atualize a variável com a URL externa correta do portal (https://ativo.narwalsistemas.com.br/)\n\n4. Salve as alterações e reinicie o serviço.\n\nApós o ajuste, as consultas ao Siscarga devem funcionar normalmente."
+  },
+  {
+    "pergunta": "Erro ao importar planilha de produtos",
+    "causa": "Porque quando vou integrar uma planilha de produtos está retornando a mensagem \"\"The operation failed: The relationship could not be changed because one or more of the foreign-key properties is non-nullable. When a change is made to a relationship, the related foreign-key property is set to a null value. If the foreign-key does not support null values, a new relationship must be defined, the foreign-key property must be assigned another non-null value, or the unrelated object must be deleted.\"?",
+    "solucao": "Para solucionar este problema, é necessário preencher a coluna PRODUTO_REFERENCIA, pois o erro ocorre quando ela está em branco."
+  },
+  {
+    "pergunta": "Por que foi disparado um follow \"aleatoriamente\"?",
+    "causa": "Foi verificado que, a informação está sendo alterada diretamente da integração do processo.\n\n",
+    "solucao": "Foi verificado que, a informação está sendo alterada diretamente da integração do processo.\n\n"
+  },
+  {
+    "pergunta": "Cancelamento de Contrato de Cambio",
+    "causa": "Cliente estava fazendo o cancelamento do fechamento de cambio.",
+    "solucao": "Instruido o cliente a realizar o cancelamento pela rotina \"contrato de cambio\" apertando no botão \"X\"."
+  },
+  {
+    "pergunta": "Porque meus impostos não consideram o acrescimo lançado no numerário?",
+    "causa": "Despesa lançada no local errado",
+    "solucao": "mportante que para o calculo dos impostos na aba Numerário considerem um acrescimo, ele precisa estar já informado na aba pré-calculo ou na própria tabela pré calculo a ser processada, porém, precisa estar informado despesa/valor antes do processamento.\n\n\n\n​Feito isso em chamada, tivemos então o valor do II recalculado.\n\nImportante levar em conta que o tipo de rateio da despesa, o valor aduaneiro da adição e peso liquido da adição, pode vir a dar alguma diferença de valor."
+  },
+  {
+    "pergunta": "Não consigo editar ou visualizar alguns campos no processo",
+    "causa": "Alguns campos do processo estão bloqueados para edição ou desapareceram. O que fazer?",
+    "solucao": "1. Desbloquear ou reexibir o campo manualmente clicando no ícone ao lado do campo (se disponível).\n\n2. Ativar o parâmetro \"Permite obrigar campos\" no cadastro do usuário. Após essa alteração, é necessário sair e entrar novamente no sistema para aplicar a mudança."
+  },
+  {
+    "pergunta": "Como deve estar na parametrização, quando a nota fiscal possui ICMS ST?",
+    "causa": "Alteração na parametrização. ",
+    "solucao": "Para calcular o ICMS ST de acordo com a planilha. \n\nDentro da rotina de parametrização, ajustamos a parametrização informando o CST de acordo com a tributação da mercadoria, foi ajustado a formula do calculo do ICMS ST. \n\nInformamos para deduzir a despesa base de ICMS, pois a mesma já está sendo utilizada no calculo do ICMS normal, como o ICMS st ela soma o ICMS normal, a despesa não deve estar informada na formula. \n\n\n"
+  },
+  {
+    "pergunta": "Erro consulta shipstracking: Não é possível realizar a ativação com os mesmos dados utilizados anteriormente",
+    "causa": "Número do booking já utilizado anteriormente em outro processo.",
+    "solucao": "Verificar o número do booking via banco e retornar para o cliente."
+  },
+  {
+    "pergunta": "Despesa AFRMM não estava somando a BC do ICMS. ",
+    "causa": "Erro do usuário. \n",
+    "solucao": "Despesa AFRMM não estava somando a BC do ICMS, dessa forma verificamos que no tipo despesa ela estava informando somente como custo do produto. \n\nAlteração feita para base de ICMS e a informação puxou de acordo. "
+  },
+  {
+    "pergunta": "LI não gera numero após cria-la",
+    "causa": "A LI estava sem numero pois ainda não havia sido deferida.",
+    "solucao": "Para que a LI apresente numero, data de deferimento e demais informações, é necessário ir na rotina de \"Licença de importação\", clicar no botão de ação da LI e ir na opção \"Deferir\""
+  },
+  {
+    "pergunta": "Por que o valor do CIF está incorreto?",
+    "causa": "Dúvida.",
+    "solucao": "Está sendo utilizada uma taxa de frete divergente da taxa que estava na planilha do cliente."
+  },
+  {
+    "pergunta": "Como puxar logo da empresa ao emitir fatura",
+    "causa": "Duvida",
+    "solucao": "Nesse caso em especifico voltou a funcionar após reiniciar o servidor"
+  },
+  {
+    "pergunta": "Erro SOAP conexão Senior",
+    "causa": "Duvida",
+    "solucao": "esse erro foi causado por falta da comunicação com Servidor do Sênior.\nQuando isso ocorre é porque o servidor do WSDL do Sênior está fora do ar. O Cliente deve ser acionado para que ative esse serviço do lado deles."
+  },
+  {
+    "pergunta": "Ao criar a NF está sendo gerado a mensagem: Saldo insuficiente",
+    "causa": "Dúvida",
+    "solucao": "Acessar a rotina Nota Fiscal e verificar se já existe NF criada para o processo."
+  },
+  {
+    "pergunta": "Processos sem atualizar a data ETD/ETA automaticamente.",
+    "causa": "Processos sem atualizar a data ETD/ETA automaticamente.",
+    "solucao": "O shipstracking que é responsável por alterar a informação dos campos ETA e ETD, se não estiver disponível para consulta no BL/AWB, não será inserido."
+  },
+  {
+    "pergunta": "Erro no envio de follow",
+    "causa": "Operação incorreta",
+    "solucao": "Follow estava inativo, após ativar o mesmo funcionou corretamente."
+  },
+  {
+    "pergunta": "Ao alterar o plano de contas contabeis, no narwal tem a possibilidade de excluir em massa? ",
+    "causa": "Duvida",
+    "solucao": "Não tem a possibilidade de estra excluindo, o que pode fazer é desativar a conta contábil. "
+  },
+  {
+    "pergunta": "Nota ficou com uma diferença de valores, cliente deseja saber causa raiz?",
+    "causa": "Duvida",
+    "solucao": "A diferença que ocorreu na nota foram baixa, podendo observar que na planilha da cliente ela faz o rateio por valor CIF, dentro do Narwal as despesas estavam rateadas por valor. \n\nDessa forma podemos observar que a diferença se dá devido ao rateio das despesas. "
+  },
+  {
+    "pergunta": "Erro ao fazer vinculação de ordens de compra/contas a pagar",
+    "causa": "Incidente",
+    "solucao": "Nesse caso Como eles re-integraram a OC com uma forma de pagamento sem financeiro, o Narwal não vai cancelar os titulos já criados anteriormente.\n\nNesse caso, favor alterar via banco o status das parcelas para 'excluído' \nO passo a ser seguido deveria ter sido:\n\n1. Editar a ordem de compra 'excluir' as parcelas da forma de pagamento;\n\n    Conferir exclusão das parcelas no contas a pagar;\n\n2. Ajustar ordens no ERP alterando a forma de pagamento para CO - SEM CAMBIO;\n\n3. Cancelar ordem no ERP e Narwal.\n\n\n"
+  },
+  {
+    "pergunta": "Relatório Previsão Numerário tipo despesas em branco",
+    "causa": "O cliente interpôs um intervalo de tempo final  igual 31/04/2025, como não existe 31/04/2025, o relatório implementou um parâmetro de data padrão -\"1990/01/01\" o que causou o relatório gerando em branco. ",
+    "solucao": "Neste caso, o relatório foi gerado em branco devido à inserção de uma data inválida (31/04/2025). A solução foi ajustar a data para um valor válido, visto que não existe 31/04/2025. Uma data válida seria, por exemplo, 30/04/2025."
+  },
+  {
+    "pergunta": "Quantas vezes as moedas são atualizadas por dia?",
+    "causa": "Dúvida.",
+    "solucao": "Esta atualização ocorre 2x por dia (manhã e tarde) e atualiza a taxa ptax das moedas"
+  },
+  {
+    "pergunta": "Produtos não integrando",
+    "causa": "Senior Sapiens foi atualizado e em algumas situações essa atualização faz o integrador perder as referencias.",
+    "solucao": "Atualizar as referencias no integrador e gerar uma nova DLL."
+  },
+  {
+    "pergunta": "Como majorar COFINS?",
+    "causa": "Dúvida.\n\n",
+    "solucao": "Se não houver majoração, deve-se clicar na flag \"não majora COFINS\", se majorar, deixar desflegado.\n\n"
+  },
+  {
+    "pergunta": "Cliente não retornou com informações",
+    "causa": "Cliente não retornou com informações",
+    "solucao": "Cliente não retornou com informações"
+  },
+  {
+    "pergunta": "Valor da despesa é alterado após integrar DI.",
+    "causa": "dúvida.",
+    "solucao": "O valor é alterado por conta que há variação na taxa de conversão. Para ter o valor da diferença, basta preencher o campo \"taxa pagamento frete\" com a taxa paga, e o campo \"taxa frete\" será preenchido com a taxa da DI. Dessa forma é gerado a despesa \"diferença de frete\" no processo."
+  },
+  {
+    "pergunta": "Descrição detalhada da mercadoria na DI",
+    "causa": "Incidente",
+    "solucao": "Na rotina Composição da Descrição da DI incluir a tag {DescricaoCompletaDi}"
+  },
+  {
+    "pergunta": "Ao gerar DI para análise: A cadeia de caracteres de entrada não estava em um formato correto.",
+    "causa": "Incidente / Falha do usuário",
+    "solucao": "Ao gerar DI para análise ocorreu mensagem: A cadeia de caracteres de entrada não estava em um formato correto..\nEditar a DI e na guia Básicas verificar se está faltando algum caracter especial, por exemplo {}"
+  },
+  {
+    "pergunta": "lentidão Sistema narwal",
+    "causa": "incidente",
+    "solucao": "A lentidão foi identificada como sendo relacionada a instabilidade, mas logo foi resolvida e o sistema voltou a operar normalmente."
+  },
+  {
+    "pergunta": "Campo Measure não sendo emitido no relatório packing list",
+    "causa": "Cliente não estava preenchendo o campo para a base de calculo.",
+    "solucao": "Dentro do Container precisa ser informado a \"quantidade no container\" para realizar a base de calculo e ser emito no relatório, caso contrario ele entende como NULL e deixa em branco."
+  },
+  {
+    "pergunta": "Mensagem sefaz: The 'http://portalfiscal.inf.br/nfe:xPed' element is invalid - The value 'INV1747 + INV1748' is invalid according to its datatype 'String' - The actual lenght is greater than the MaxLenght value.",
+    "causa": "Esse erro ocorre quando no XML o elemento \"xPed\" possui mais de 15 caracteres.",
+    "solucao": "Foi necessário cancelar a NF, após cancelar a NF, alterar no processo o campo \"Referência adquirente / numero po\" para ter menos de 15 caracteres.\n\nAssim que alterado no processo, a NF pode ser gerada novamente."
+  },
+  {
+    "pergunta": "Como gerar nota fiscal, puxando alíquota correta do crédito presumido?",
+    "causa": "Cliente com nota que tinha crédito presumido e a alíquota que puxava era alíquota do ICMS. ",
+    "solucao": "Para que a nota fiscal puxe com o crédito presumido precisa ser informado os percentuais dentro da parametrização, e também o código do crédito presumido. \n\nDentro da rotina de Variáveis de Ambiente, na variável \" NWL_CALCULOCREDITOPRESUMIDO\", precisa estar informado no Valor com o número da variável que corresponde ao calculo, nessa situação que o percentual Credito presumido estava igual ao percentual do ICMS, vai ser informada a variável 2. \n\n2= BC ICMS * PERCENTUAL DO CRÉDITO PRESUMIDO. \n\n"
+  },
+  {
+    "pergunta": "Erro 500 ao acessar o Narwal",
+    "causa": "Estou tentando realizar o login no Narwal, mas ao inserir meus dados e clicar em login, é exibido o erro \"Erro HTTP 500\". O que fazer?",
+    "solucao": "Este caso foi resolvido no ticket 55790."
+  },
+  {
+    "pergunta": "Qual cálculo é feito no Custo Unitário",
+    "causa": "Dúvida.",
+    "solucao": "Para o campo Custo Unitário do relatório:\n\n Custo Unitário = (ValorSubTotal + ValorIcms + ValorHonorario - ValorDiferencaIcms ) / Quantidade\nSubcalculos:\n\nValorSubTotal = ValorCif + ValorIi + ValorPis + ValorCofins + ValorDespesasAduaneiras \nValorDiferencaIcms = ValorIcms - ValorIcmsAntecipado"
+  },
+  {
+    "pergunta": "Cadastro do fabricante com chave inválida",
+    "causa": "O cadastro do fabricante no narwal estava com uma chave GUID",
+    "solucao": "Informar uma chave no cadastro do fabricante que exista no Sankhya"
+  },
+  {
+    "pergunta": "Erro na rotina de recebimento.",
+    "causa": "Erro(s) de validação : The field MensagemErro must be a string or array type with a maximum length of '100'.\n\nO erro não é retornado e tela devido ao tamanho da mensagem de erro retornada.",
+    "solucao": "Foi necessário cancelar o título no contas a receber e gera-lo novamente, após isso foi possível fazer a consulta da situação do boleto."
+  },
+  {
+    "pergunta": "Título duplicado ",
+    "causa": "Dois usuários criaram o título simultâneamente.",
+    "solucao": "Excluir um dos títulos."
+  },
+  {
+    "pergunta": "instabilidade no BI do cliente",
+    "causa": "instabilidade no BI do cliente",
+    "solucao": "instabilidade no BI do cliente"
+  },
+  {
+    "pergunta": "Existem outras invoices que não estão no XML ou JSON, é necessário excluir antes de continuar",
+    "causa": "Duvida",
+    "solucao": "O numero da Invoice está diferente do numero da FATURA COMERCIAL no XML da DI."
+  },
+  {
+    "pergunta": "Falha ao carregar dados anexos ao recebimento(Filial)",
+    "causa": "No recebimento, o campo Filial estava em branco.",
+    "solucao": "Realizar o preenchimento do campo Filial."
+  },
+  {
+    "pergunta": "Campo personalizado trazendo dados de forma automática",
+    "causa": "Porque quando crio um processo novo, meu campo personalizado está trazendo dados de forma automática?",
+    "solucao": "Para resolver essa situação, é necessário identificar qual campo personalizado está preenchendo os dados automaticamente. Em seguida, clique no ícone de edição ao lado do campo, apague o conteúdo do campo \"Valor\" e salve as alterações. Ao deixá-lo em branco, os próximos processos manterão o campo personalizado vazio, permitindo que ele seja preenchido manualmente conforme as especificidades de cada processo."
+  },
+  {
+    "pergunta": "Como gerar NFSe Expo com valor do serviço?",
+    "causa": "Dúvida.\n",
+    "solucao": "Adicionado serviço no contrato de comissão\nAba \"Serviços\" da rotina \"Fechamento Financeiro\"\nClicar em \"Processar contrato\"\nAba \"Fechamento financeiro\" e \"Gerar parcela\";\nE o pedido será gerado com o valor do serviço do processo\n"
+  },
+  {
+    "pergunta": "Por que o valor do percentual está zerado na parcela da Invoice?",
+    "causa": "Dúvida.",
+    "solucao": "As parcelas foram alteradas manualmente, o percentual foi zerado e o valor foi preenchido:\n"
+  },
+  {
+    "pergunta": "Rejeição: Informado código de município diferente de \"9999999\" para operação com o exterior",
+    "causa": "Informação errada no cadastro do fornecedor",
+    "solucao": "No cadastro do Fornecedor, quando o PAÍS é do Exterior, obrigatoriamente a Cidade e Estado devem ser do Exterior."
+  },
+  {
+    "pergunta": "Lentidão de sistema",
+    "causa": "Incidente",
+    "solucao": "Lentidão resolvida com a infra no qual servidor estava com 100% da CPU"
+  },
+  {
+    "pergunta": "Porque retorna erro de certificado vencido se o mesmo está dentro da validade?",
+    "causa": "Duvida",
+    "solucao": "È importante que todos os dados cadastrados no E-notas estejam identicos no Narwal.\nInclusive a chave gerada para o cliente no Enotas, incluído na aba NFSe do cadastro da filial (chave alfa numérica)"
+  },
+  {
+    "pergunta": "COmo validar erro de Timeout na extração de dados para o BI",
+    "causa": "Incidente ao fazer extração de dados do BI",
+    "solucao": "Esse erro é reflexo dos erros que estávamos recebendo também nas APIs de Integração de Pedido.\n Realizado limpeza de logs e serviço windows no ambiente e a parte de Pedidos voltou ao normal.\n\n"
+  },
+  {
+    "pergunta": "NCM null no item do pedido de compra - Senior",
+    "causa": "O integrador estava montando o JSON do pedido sem informar o NCM do item, pois a regra parametrizada era de buscar o NCM do produto já cadastrado no Narwal. E esse produto por sua vez estava sem NCM",
+    "solucao": "Alterada Key (ConsultaNcmProduto) no config do integrador para preencher o NCM no JSON com o CODCLF que vem no pedido, ao inves de buscar do cadastro do produto no Narwal"
+  },
+  {
+    "pergunta": "Qual a taxa usada para os gerar os títulos efetivos de produto?",
+    "causa": "Dúvida",
+    "solucao": "É utilizada a taxa da DI"
+  },
+  {
+    "pergunta": "Por que o valor do ICMS está sendo gerado negativo?",
+    "causa": "Dúvida.",
+    "solucao": "Na exceção fiscal desta NCM a flag de diferimento sobre alíquota não estava marcada."
+  },
+  {
+    "pergunta": "Envio da nota fiscal com mensagem do Gcred em tela, não conseguindo enviar ao sefaz. ",
+    "causa": "Nota fiscal com credito presumido, cliente estava enviando a nota para sefaz e dava mensagem em tela do Gcred",
+    "solucao": "Verificado que no XML, não estava puxando informação do código credito presumido, por que o cliente dentro da parametrização estava informando no campo incorreto. \n\nO correto para parametrização de saída, é código crédito presumido, cliente informando no código beneficio. "
+  },
+  {
+    "pergunta": "Como desativar follow de importação?",
+    "causa": "Como desativar um follow de importação no narwal.",
+    "solucao": "\nNesse caso voce pode estar desativando através da rotina Follow de importação, nele voce terá os follow de importação no qual esta sendo enviado aos cliente, ao entrar na rotina precisa editar e inativar , assiim evitando e envair mais follows aos cliente que nao embarcaram."
+  },
+  {
+    "pergunta": "Porque a moeda muda quando chega no contas a pagar",
+    "causa": "Cliente tinha no processo uma moeda especifica porém quando integrou no contas a pagar apareceu outra moeda",
+    "solucao": "Esse caso acontece pois o que vale é o que esta na invoice e se verificar a invoice estava com a moeda chinesa porém foi alterado para USD, dessa forma precisa editar a invoice e enviar novamente para o contas a pagar."
+  },
+  {
+    "pergunta": "Alguns processos sumindo o fluxo de caixa ",
+    "causa": "Duvida",
+    "solucao": "Atualmente o relatório de Fluxo de Caixa Impostos e Despesas possui 2 regras para mostrar um processo.\n\nA primeira regra e que deve ter alguma invoice vinculada a esse processo.\n\n\n\nA segunda Regra e que deve o processo não pode ter Numero de Di e Data Registro Di informada\n\nAo verificar os processos WEL-000033 e LSC-00195 foi visto que os dois possuem Numero DI e Data Registro Di informada, por este motivo esses processos não estão aparecendo no relatório."
+  },
+  {
+    "pergunta": "Nota Fiscal - Emissão pelo Importador",
+    "causa": "Duvida",
+    "solucao": "É importante considerar que o Narwal possui uma funcionalidade que, quando a flag na filial \"Emite NF pelo Importador\" estiver TRUE, as configurações de numero de série, certificado, ambiente sefaz deve ser informado na aba Nota Fiscal do Cadastro de Importador."
+  },
+  {
+    "pergunta": "Por que o valor do ICMS está somando no fechamento financeiro mesmo que eu exclua do processo?",
+    "causa": "Dúvida.",
+    "solucao": "Quando uma despesa é criada de forma automática pelo Narwal, sempre irá aparecer no fechamento financeiro, mesmo que seja excluída manualmente no processo."
+  },
+  {
+    "pergunta": "Por que a despesa base de imposto reduz a base de ICMS?",
+    "causa": "Dúvida.",
+    "solucao": "Havia uma variável de ambiente (NWL_PREPAIDICMS) que estava habilitada, descontando a base de imposto da base de ICMS."
+  },
+  {
+    "pergunta": "Erro ao Salvar a DUIMP",
+    "causa": "Duvida",
+    "solucao": "A despesa vinculada a DUIMP não está relacionada com o Acréscimo do SISCOMEX, após apontar os dois para o mesmo foi possível salvar a DUIMP "
+  },
+  {
+    "pergunta": "Como configurar uma despesa para não ir para o fechamento financeiro?",
+    "causa": "Dúvida.",
+    "solucao": "Despesas pagas pelo importador e despachante entram no fechamento. Quando é paga pelo cliente não entra. Poderia realizar esta alteração na aba \"DI/DA\" do processo, campo \"Impostos Estaduais\"."
+  },
+  {
+    "pergunta": "Erro ao logar no narwal",
+    "causa": "Ao tentar logar no narwal o sistema fica fora",
+    "solucao": "Se você está recebendo um erro ao tentar fazer login, pode ser que sua conta tenha sido bloqueada devido a várias tentativas de login com a senha errada. Para resolver isso, siga os passos abaixo:\n\nVerifique no banco de dados: Acesse a tabela AspNetUsers.\nCheque a coluna LockoutEndDateUtc: Se o valor dessa coluna estiver nulo, isso significa que a conta não está bloqueada. Se a coluna contiver uma data e hora, significa que a conta está bloqueada até esse momento.\nO que fazer se a coluna não for nula: Caso o valor não seja nulo, significa que o cliente precisará aguardar o desbloqueio automático ou um administrador precisará liberar a conta manualmente.\nEsse bloqueio ocorre para proteger a conta, pois o cliente pode ter tentado acessar com a senha errada várias vezes."
+  },
+  {
+    "pergunta": "Duplicidade de Fabricantes",
+    "causa": "Integração de XML",
+    "solucao": "Ao integrar o XML o cliente estava informando um fabricante que estava desativado assim gerando mais um com as mesmas informações no sistema."
+  },
+  {
+    "pergunta": "NF sem Pis Cofins",
+    "causa": "Nota integrando sem PIS/COFINS",
+    "solucao": "Reenviada a mesma requisição e o valor integrou"
+  },
+  {
+    "pergunta": "Informações Complementares Siscomex não estão sendo listadas para Declaração Duimp.",
+    "causa": "Dúvida",
+    "solucao": "Na Informação complementar Siscomex poderá ser informado o Tipo DI ou Duimp.   "
+  },
+  {
+    "pergunta": "Valores de impostos incorretos",
+    "causa": "Valores do custo de importação estava incorreto",
+    "solucao": "Nesse caso foi calculado impostos e dessa forma os valores ficaram corretos."
+  },
+  {
+    "pergunta": "ERRO AO REGISTRAR DI - NAO PUXA DESCRIÇÃO DO ITEM",
+    "causa": "ERRO AO REGISTRAR DI - NAO PUXA DESCRIÇÃO DO ITEM",
+    "solucao": "Ajustar a descrição em rotina composição de descrição na DI"
+  },
+  {
+    "pergunta": "Erro ao tentar salvar processo. \"Erro(s) de validação : The fiel NumeroPo must be a string or array type with a maximum lenght of '50'.\"",
+    "causa": "Erro ocorre pois estava sendo informado mais de 50 caracteres no campo \"NumeroPO\".",
+    "solucao": "Diminuir a quantidade de caracteres do campo."
+  },
+  {
+    "pergunta": "Desativar Follow-up padrão.",
+    "causa": "Dúvida",
+    "solucao": "Não é possível desativar um follow-up padrão do sistema."
+  },
+  {
+    "pergunta": "Porque da erro 500 ao visualizar anexos do processo?",
+    "causa": "Esse erro pode ocorrer por conta do nome do arquivo, caso tenha E comercial \"&\", não será possível visualizar.",
+    "solucao": "Renomear o arquivo removendo o E comercial \"&\"."
+  },
+  {
+    "pergunta": "Como inativar cadastro de importador?",
+    "causa": "Como inativar cadastro de importador dentro do narwal.",
+    "solucao": " é possível realizar a inativação do importador. Para isso, basta acessar a rotina de importador>adicionar o código ou nome do importador desejado> editar > clicar em inativar e salvar."
+  },
+  {
+    "pergunta": "Como ativar o campo \"Cubagem Total\" no processo de exportação?",
+    "causa": "Como habilitar a edição do campo \"Cubagem Total\", localizado na aba \"Transporte\" em um processo de exportação?",
+    "solucao": "Para habilitar a edição manual do campo \"Cubagem Total\", é necessário verificar o tipo de embalagem vinculada ao processo (na aba \"Embalagens\" do processo) e, em seguida, marcar a opção \"Permite informar cubagem\"."
+  },
+  {
+    "pergunta": "Background job creation failed. See inner exception for details",
+    "causa": "Incidente",
+    "solucao": "Após atualizar versão não ocorreu a mensagem Background job creation failed. See inner exception for details ao salvar."
+  },
+  {
+    "pergunta": "Falha ao acessar o ambiente",
+    "causa": "Ao tentar acessar o ambiente da Lorenzetti, estava retornando a mensagem de erro \"O nome da rede não está mais disponível.",
+    "solucao": "o ambiente da Lorenzetti teve uma parada inesperada na conexão do banco. Foi acionada a CDB para que a conexão fosse reestabelecida."
+  },
+  {
+    "pergunta": "Unidade tributada e quantidade tributada nota fiscal. ",
+    "causa": "Ao enviar a nota para Sefaz o Narwal acusou uma mensagem em tela.\n\n\" Erros na validação: the element 'prod' in namespace: Cbarratrib, utrib. \n\nErro referente a unidade tributada e a quantidade tributada. ",
+    "solucao": "Dentro da rotina NCM vai buscar pelo NCM da nota fiscal e informar na unidade de medida a conversão da unidade. \n\nExemplo no produto está unida como .TONELADA METRICA, no NCM tem que ficar a conversão. \n\nDentro da rotina de Conversão de unidade de medida, precisa estar cadastrado a conversão também. \n\nConversões que possui cadastrada para essa unidade de medida do produto. \n\nApós ajustes, precisa cancelar  gerar novamente a nota. \n\n"
+  },
+  {
+    "pergunta": "Usuario IIS",
+    "causa": "Usuário expirado.",
+    "solucao": "Após realizar os ajustes e configurar as permissões do usuário, o problema foi resolvido e o sistema passou a funcionar corretamente."
+  },
+  {
+    "pergunta": "Como configurar despesas para que não entrem no fechamento financeiro?",
+    "causa": "Dúvida.",
+    "solucao": "Para que as despesas de adiantamento não entrem no cálculo do fechamento financeiro, é necessário que elas estejam configuradas como \"Pago pelo cliente\" no numerário ou na aba despesas."
+  },
+  {
+    "pergunta": "AUTHENTICATION: USER NOT AUTHORIZED",
+    "causa": "Atualização Protheus",
+    "solucao": "Após atualizar sistema Protheus não foi possível salvar no Narwal ocasionando mensagem AUTHENTICATION: USER NOT AUTHORIZED."
+  },
+  {
+    "pergunta": "Chamado aberto erroneamente.",
+    "causa": "Chamado aberto erroneamente.",
+    "solucao": "Chamado aberto erroneamente."
+  },
+  {
+    "pergunta": "Meu Ships Tracking não está funcionando",
+    "causa": "Duvida",
+    "solucao": "As variáveis de ambiente devem estar configuradas de acordo com a imagem abaixo:\n(vide imagem no chamado 55029)\nIsso já está ok no ambiente.\n\nDentro do processo:\n\nCaso seja marítimo:\n      \nInformar o armador;\nInformar o número do container ou do booking;\nsalvar o processo;\napertar no botão \"Consulta shipstracking\" na aba transporte (caso use container) ou na aba tracking (caso use booking).\n\nCaso seja aéreo:\n\nInformar o AWB na aba embarque (apenas os números (11 dígitos));\nSalvar o processo\nClicar no botão consulta shipstracking da aba embarque\n\nGeralmente a consulta demora umas 12 horas para retornar os dados na tela do tracking."
+  },
+  {
+    "pergunta": "É possível configurar o número de casas decimais do campo 'quantidade' nas NFes enviadas para o Senior?",
+    "causa": "Sim temos uma variável de ambiente NWL_SENIORDECIMAISNAQTDNFE que altera isso",
+    "solucao": "Sim temos uma variável de ambiente NWL_SENIORDECIMAISNAQTDNFE que altera isso"
+  },
+  {
+    "pergunta": "Erro ao importar produtos via planilha?",
+    "causa": "Cliente importando planilha com as informações divergentes. ",
+    "solucao": " Narwal realiza a validação pela chave do produto, note que a chave está igual para os produtos. \n\nPeço que informe 1 chave para cada produto e realize o teste novamente, visto que não é possível cadastrar somente 1 chave para vários produtos"
+  },
+  {
+    "pergunta": "RETIRAR OBRIGATORIEDADE  DO PEDIDO DE SERVIÇO",
+    "causa": "Cliente solicita retirar obrigatoriedade do campo transporte na rotina pedido de serviço",
+    "solucao": "infelizmente não é possível realizar a alteração, pois a definição da via de transporte é obrigatória por padrão do sistema. Ou seja, todo pedido de serviço deve incluir qual será a via de transporte utilizada."
+  },
+  {
+    "pergunta": "Erro ao tentar Autorizar NF no sefaz \"Valor do Produto difere do produto Valor Unitario de Tributacao e Quantidade Tributavel\".",
+    "causa": "Esse erro é retornado pois algum item da nota fiscal está com o campo \"Valor unid. tributada\" com valor 0.",
+    "solucao": "Editar o produto e informar o valor. Ou criar na rotina \"Conversão de unidade de medida\" a conversão entre unidade de medida e unidade tributada."
+  },
+  {
+    "pergunta": "sistema não traz Extarifário atual. ",
+    "causa": "O JOB não trouxe a informação atualizada do extarifario.",
+    "solucao": "Foi necessário inserir a informação manualmente via banco.\n\nFoi aberto card com o time de produto para correção."
+  },
+  {
+    "pergunta": "Qual a origem do valor do campo chaveMoeda retornado da API para lançamentos contábeis",
+    "causa": "dúvida",
+    "solucao": "O campo é preenchido com a moeda do contas a pagar relacionado ao lançamento contábil."
+  },
+  {
+    "pergunta": "Invalido, era duvida sobre outro erp",
+    "causa": "Invalido, era duvida sobre outro erp",
+    "solucao": "Invalido, era duvida sobre outro erp"
+  },
+  {
+    "pergunta": "É possivel lançar duas despesas com codigo de acrescimos de siscomex iguais na DI?",
+    "causa": "Erro impeditivo de registro de DI na analise:\n001 - código de acréscimo - repetido na mesma adição.",
+    "solucao": "No Siscomex, ao registrar uma Declaração de Importação (DI) com acréscimos, cada tipo de acréscimo deve ser identificado corretamente. No entanto, não é possível incluir dois acréscimos com o mesmo código dentro de uma mesma DI, pois o sistema exige que cada acréscimo tenha um código distinto para evitar duplicidade e inconsistências nos cálculos dos tributos e despesas.\n\nSe houver necessidade de incluir o mesmo tipo de acréscimo mais de uma vez, você pode:\n\nSomar os valores e registrar o acréscimo uma única vez.\n\nVerificar se há um código alternativo que possa ser utilizado para diferenciar as ocorrências."
+  },
+  {
+    "pergunta": "Modalidade importação Conta e Ordem no PDF da DI quando a importação é Encomenda",
+    "causa": "n/a",
+    "solucao": "\nIsso ocorre porque, no Portal Siscomex, não há uma opção de declaração de importação especificamente denominada \"Encomenda\". Dessa forma, como o sistema Narwal foi desenvolvido com base nas mesmas premissas do Siscomex, por isso a informação que fica evidenciada nos documentos oficiais PDF e XML é apenas Conta e ordem. "
+  },
+  {
+    "pergunta": "Adicionar ou remover item no pedido.",
+    "causa": "Não estava sendo possível adicionar ou remover itens do pedido pois o Status era diferente de \"aberto\".",
+    "solucao": "Cancelar processo e invoice vinculada ao pedido de compra."
+  },
+  {
+    "pergunta": "Por que o valor da NF estão incorretos?",
+    "causa": "Dúvida.",
+    "solucao": "A parametrização deve ser informada no processo e na NF para que os valores fiquem de acordo no fechamento.\n\n"
+  },
+  {
+    "pergunta": "Valor de Frete sendo calculado nas despesas do processo mesmo tendo Incoterm DAP",
+    "causa": "Duvida",
+    "solucao": "Para que o problema parasse de ocorrer, desabilitada a variável de ambiente NWL_CRIADESPFRETE, dessa forma, só irá criar a despesa de frete quando processadas despesas na aba numerário e se o valor do Frete estiver como Collect na aba valores."
+  },
+  {
+    "pergunta": "Erro quando Supply ainda não foi aprovado porém cliente não utiliza esta rotina",
+    "causa": "Supply é uma rotina que envia um follow para o Fornecedor do pedido de Compra é criado. O Fornecedor precisa entrar no link do follow e colocar informações sobre os produtos. Após o Fornecedor dar o Aceite, as informações são integradas no Pedido de Compra.",
+    "solucao": "Desativar o Supply Internacional no cadastro do Fornecedor."
+  },
+  {
+    "pergunta": "Erro ao tentar acessar URL Narwal \"HTTP Error 503. The service is unavailable.\".",
+    "causa": "Foi identificado que o servidor estava travado, fazendo com que o sistema ficasse fora do ar. Também devido a VM estar travada, não estava sendo possível acessa-la para verificar o motivo do sistema estar fora do ar.",
+    "solucao": "Foi necessário abrir chamado com o time de infra para verificar o problema."
+  },
+  {
+    "pergunta": "Informe o Banco Informe a agencia bancária ao registrar a DI ",
+    "causa": "Dúvida",
+    "solucao": "Acessar a rotina Declaração Importação, guia Pagamentos e informar os dados bancários."
+  },
+  {
+    "pergunta": "Casas decimais da taxa moeda.",
+    "causa": "Dúvida",
+    "solucao": "Na rotina Variáveis de ambiente NWL_DECCASPRO alterar no campo Valor a quantidade conforme a necessidade. "
+  },
+  {
+    "pergunta": "Nota fiscal com mensagem em tela ao enviar para sefaz. ",
+    "causa": "Usuário com divergência certificado ao gerar a nota para SEFAZ. ",
+    "solucao": "Mensagem em tela \" THE REMOTE SERVER RETURNED EN ERROR: (403) FORBIDDEN\"\n\nEssa mensagem se da devido ao certificado digital utilizado para emissão da nota, nesse caso precisaria ver se a nota ia ser emitida pela filial ou importador. "
+  },
+  {
+    "pergunta": "Por que não é possível cancelar a Invoice ",
+    "causa": "Dúvida.",
+    "solucao": "Há títulos em aberto com a Invoice vinculada. É necessário realizar o cancelamento para excluir a Invoice."
+  },
+  {
+    "pergunta": "Como a Narwal garante a segurança dos dados no sistema?",
+    "causa": "Como a Narwal protege os dados no sistema, incluindo o uso de criptografia, firewall, VPN, MFA/2FA, monitoramento de logs, SIEM e proteção contra DDoS.",
+    "solucao": "A infraestrutura Narwal conta com criptografia na VPN e nas conexões aos sites e endpoints de APIs e Portais através de protocolos de encriptação (SSL para WEB e TLS para VPN contra ataques de Man-In-the-Middle), o produto possui MFA também (consultar versões).\n\n\n\nRealizamos monitoramento de ambientes ativamente 24h através de Zabbix + Grafana + Monitoramento ativo de banco de dados que disparam chamados e alertas automaticamente quando detectado anomalias nos servidores.\n\n\n\nA rede Narwal conta com Firewall Fortinet + IDS + IPS + Anti DDoS + Firewall de Segmentação Interna + ACLs para ambientes privados (caso solicitado)."
+  },
+  {
+    "pergunta": " Integração: inconsistência nas datas",
+    "causa": "Ao abrir a nota o campo Data de emissão / Data Vencimento estão preenchidos no Narwal. No entanto quando observado no SAP as datas estão diferentes.",
+    "solucao": "Identificamos que enviávamos o campo DocDueDate(Data vencimento) o campo dataCadastro do Narwal, agora ajustamos para buscar o campo data de vencimento informado de dentro da nota que é o comportamento correto. \n\n\n\nQuanto ao campo DocDate que seria o campo data de lançamento/ Data do documento no SAP B1 estamos enviando a informação da data de integração com o ERP SAP B1 que é o comportamento correto segundo própria consultoria SAP B1, visto que a data de criação do documento é a mesma que será integrada, sendo assim não é necessário o ajuste nessa data\n\nOBS: A Data do documento SAP é o SAP que atualiza de acordo com a data de lançamento enviada para o ERP. Caso seja necessário o envio ou algum outro comportamento diferente disso, deve ser tratado via F08, para que a equipe avalie e desenvolva caso aprovado. \n\n"
+  },
+  {
+    "pergunta": "Rejeição SEFAZ: Duplicidade de NF-e, com diferença na Chave de Acesso ",
+    "causa": "Incidente",
+    "solucao": "A mensagem ocorre pois a numeração/série que está sendo enviada para SEFAZ já existe no SEFAZ. No Narwal, nesse momento para liberar a NF, deverá ser realizado ação interna para liberar a NF para que o cliente cancele ou envie novamente para SEFAZ.  "
+  },
+  {
+    "pergunta": "Integração NF Despesa, campos N° e Série",
+    "causa": "Número e a Série foram informados dentro do Narwal, contudo, dentro do SAP não constam",
+    "solucao": "hoje não possuímos a integração do numero da NF e da Serie no padrão de integração, caso o cliente deseje que integre deverá ser aberto um F08 para analisarmos a viabilidade desse campo. "
+  },
+  {
+    "pergunta": "Como resolver problema  vinculação de importador X Exportador",
+    "causa": "Erro vinculação de importador X Exportador DI",
+    "solucao": "o vínculo não estava sendo exibido devido ao fato de o nome do cliente estar em maiúsculas. Realizamos o ajuste para a forma minúscula, e o vínculo foi corretamente exibido na Declaração de Importação (DI)."
+  },
+  {
+    "pergunta": "Alíquota ICMS incorreta no relatório de custo.",
+    "causa": "Há uma exceção fiscal para parametrizar as alíquotas. ",
+    "solucao": "Quando entrei no processo já estava de acordo. Mas nesses casos, deve-se olhar a parametrização> exceção fiscal."
+  },
+  {
+    "pergunta": "Erro ao calcular taxa da DI",
+    "causa": "Alerta exibido ao tentar calcular os impostos da DI: \"Base de Cálculo Ad Valorem II - Incorreta. É necessário extrair a tabela de Taxa de Conversão de Câmbio.\"\n",
+    "solucao": "Para resolver este caso, é necessário verificar se a taxa da moeda DÓLAR foi devidamente atualizada. Para isso, acesse a rotina Moeda -> Dólar e verifique os campos \"Data Fim Vigência Ptax Venda\" e \"Valor Ptax Venda\". Ambos os campos devem estar atualizados com a taxa correspondente ao mesmo dia em que os cálculos dos impostos da DI forem realizados.\n\nPara confirmar as taxas atualizadas, você pode consultar diretamente o portal do Banco Central, no seguinte link: https://www.bcb.gov.br/estabilidadefinanceira/historicocotacoes."
+  },
+  {
+    "pergunta": "Despesas geradas automaticamente a partir do processamento da DI não vem com a flag \"Cria Financeiro\" ativadas",
+    "causa": "Dúvida",
+    "solucao": "Esse é um comportamento padrão, pois é necessário informar o fornecedor e a data de vencimento para que o título seja criado corretamente.\n\n"
+  },
+  {
+    "pergunta": "Como é zerado um saldo de uma importação com entreposto aduaneiro?",
+    "causa": "Dúvida.",
+    "solucao": "Em casos de entreposto aduaneiro, ao decorrer de a carga ser nacionalizada, o saldo irá zerando. Mas em casos onde a mercadoria irá voltar para o fornecedor, por exemplo, ou não vai mais ser nacionalizada, o Narwal não tem um cenário que atenda. Sendo assim, será necessário abrir um processo de expo, caso desejam controlar dentro do Narwal.\nQuanto ao processo de importação mãe, ele ficará com a quantidade em aberto. Contudo, é possível gerar um processo filho apenas pra consumir saldo com alguma identificação."
+  },
+  {
+    "pergunta": "Erro ao calcular os impostos.",
+    "causa": "Filial estava divergente no processo e na invoice.",
+    "solucao": "Filial estava divergente no processo e na invoice."
+  },
+  {
+    "pergunta": "Não é possível criar uma nova pasta na gestão de documentos.",
+    "causa": "Ao acessar a rotina Pastas para gestão documentos -> Importação, o botão \"Novo\" não aparece.",
+    "solucao": "Validar dentro da rotina de grupo de usuário, se a rotina está somente como visualização."
+  },
+  {
+    "pergunta": "CST imposto não puxando nota e Conversão de unidade medida. ",
+    "causa": "Em agenda realizada com o cliente, verificamos que os campos onde precisavam estar preenchidos para puxar a informação estava divergente. \n\nErro do Usuário não preencheu os campos para que puxasse a informação na nota fiscal. ",
+    "solucao": "Cliente com cenário ontem o CST dos impostos não estava puxando nota fiscal e  conversão unidade também não puxava de forma automática. \n\nPara que a unidade conversão puxe na nota fiscal precisa estar cadastrada dentro do NCM, e também na rotina de unidade de conversão. \n\nDentro da parametrização para que o CST puxe em nota, precisa estar informado dentro da parametrização. "
+  },
+  {
+    "pergunta": "Como manter o histórico na rotina Fluxo de Caixa Operacional",
+    "causa": "Dúvida",
+    "solucao": "O Fluxo operacional não compreende títulos baixados pois ele sempre olha para os titulos futuros, o que ele olha é o saldo em conta dos bancos selecionados.\nJá lhe adianto que essa rotina não será modificada para olhar para títulos baixados, pois não faz sentido para a finalidade da rotina."
+  },
+  {
+    "pergunta": "E que momento é criado o título INV (Definitivo)?",
+    "causa": "Dúvida.",
+    "solucao": "A alteração do titulo previsto para o titulo efetivo da invoice pode ocorrer em 2 momentos, sendo eles:\n\n1. Quando for realizado um contrato de cambio do tipo antecipado e compensado na invoice;\n\n2. Quando a NFentrada for emitida, qualquer valor em aberto muda automaticamente para titulo efetivo."
+  },
+  {
+    "pergunta": "Tem um campo na TGFIDI do Sankhya que o Narwal está enviando um ' ' (espaço)",
+    "causa": "Dúvida",
+    "solucao": "Não houve solução, pois do lado da Narwal (Produto / API) constatamos através da consulta do LOG de envio da Nota Fiscal para o ERP (SANKHYA) que não estamos enviando nenhum espaço em branco. \nDirecionamos ao cliente que entre em contato com sua consultoria do ERP e tente verificar se há um default aplicado na API de recepção dos dados."
+  },
+  {
+    "pergunta": ".",
+    "causa": ".",
+    "solucao": "."
+  },
+  {
+    "pergunta": "Porque meus pedidos não integram do Sankhya?",
+    "causa": "A fila de requisições estava com um numero exacerbante de registros",
+    "solucao": "Acionar time de integração para reiniciar a API."
+  },
+  {
+    "pergunta": "Quais valores alimentam meu fluxo de caixa?",
+    "causa": "Duvida",
+    "solucao": "Todos os valores abertos no Contas á Pagar e Receber, ao qual foi informado a conta bancária destino irão alimentar a rotina de fluxo de caixa, independente da natureza do título.\n\nTitulos baixados/cancelados/excluídos já não compõem pois a finalidade do modulo é controlar valores á pagar."
+  }
+]
