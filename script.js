@@ -16,7 +16,7 @@ function exibirMaisPesquisadas() {
     var linkTicket = "https://narwalsistemas.movidesk.com/Ticket/Edit/" + faq.id; // Link para o ticket
     div.className = "resultado";
     div.innerHTML = `
-      <h2>Ticket: <a id="linkResultado" href=${linkTicket}>${faq.id}</a></h2>
+      <h2>Ticket: <a id="linkResultado" href=${linkTicket} target="_blank">${faq.id}</a></h2>
       <p><strong>Pergunta:</strong> ${faq.pergunta}</p>
       <p><strong>Causa raiz:</strong> ${faq.causa}</p>
       <p><strong>Solução:</strong> ${faq.solucao}</p>
@@ -73,7 +73,7 @@ input.addEventListener("keypress", function (e) {
             var linkTicket = "https://narwalsistemas.movidesk.com/Ticket/Edit/" + faq.id;
             div.className = "resultado";
             div.innerHTML = `
-              <h2>Ticket: <a id="linkResultado" href=${linkTicket}>${faq.id}</a></h2>
+              <h2>Ticket: <a id="linkResultado" href=${linkTicket} target="_blank">${faq.id}</a></h2>
               <p><strong>Pergunta:</strong> ${faq.pergunta}</p>
               <p><strong>Causa raiz:</strong> ${faq.causa}</p>
               <p><strong>Solução:</strong> ${faq.solucao}</p>
