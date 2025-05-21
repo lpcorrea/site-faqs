@@ -9,15 +9,17 @@ let perguntasMaisPesquisadas = JSON.parse(localStorage.getItem("maisPesquisadas"
 // Função para exibir as perguntas mais pesquisadas
 function exibirMaisPesquisadas() {
   listaMaisPesquisadas.innerHTML = "";
-  perguntasMaisPesquisadas.sort((a, b) => b.marcas - a.marcas); // Ordenar por número de marcas
+  // Ordenar por número de marcas
+  perguntasMaisPesquisadas.sort((a, b) => b.marcas - a.marcas);
   perguntasMaisPesquisadas.forEach((faq) => {
     const div = document.createElement("div");
+    var linkTicket = "https://narwalsistemas.movidesk.com/Ticket/Edit/" + faq.id; // Link para o ticket
     div.className = "resultado";
     div.innerHTML = `
-      <h3>${faq.pergunta}</h3>
+      <h2>Ticket: <a id="linkResultado" href=${linkTicket}>${faq.id}</a></h2>
+      <p><strong>Pergunta:</strong> ${faq.pergunta}</p>
       <p><strong>Causa raiz:</strong> ${faq.causa}</p>
       <p><strong>Solução:</strong> ${faq.solucao}</p>
-      <div class="marcas-contador">${faq.marcas}</div> <!-- Exibe o número de marcações -->
     `;
     listaMaisPesquisadas.appendChild(div);
   });
@@ -45,7 +47,12 @@ input.addEventListener("keypress", function (e) {
     resultadosDiv.innerHTML = ""; // Limpa resultados anteriores
     maisPesquisadasDiv.style.display = "none"; // Esconde as perguntas mais pesquisadas ao realizar uma pesquisa
 
-    if (termo.length === 0) return;
+    console.log("Termo de pesquisa:", termo); // Log do termo de pesquisa
+    if (termo.length === 0) { 
+      console.log("Campo de pesquisa vazio, exibindo perguntas mais pesquisadas.");
+      exibirMaisPesquisadas(); 
+      return;
+    } // Se o termo estiver vazio, exibe as perguntas mais pesquisadas
 
     // Divida o termo em palavras
     const palavrasTermo = termo.split(" ").map(normalizarTexto);
@@ -63,26 +70,30 @@ input.addEventListener("keypress", function (e) {
         } else {
           encontrados.forEach(faq => {
             const div = document.createElement("div");
+            var linkTicket = "https://narwalsistemas.movidesk.com/Ticket/Edit/" + faq.id;
             div.className = "resultado";
             div.innerHTML = `
-              <h3>${faq.pergunta}</h3>
+              <h2>Ticket: <a id="linkResultado" href=${linkTicket}>${faq.id}</a></h2>
+              <p><strong>Pergunta:</strong> ${faq.pergunta}</p>
               <p><strong>Causa raiz:</strong> ${faq.causa}</p>
               <p><strong>Solução:</strong> ${faq.solucao}</p>
-              <button class="marcar-btn"></button>
             `;
+            //  <button class="marcar-btn"></button>
+            
             resultadosDiv.appendChild(div);
 
             // Adicionar evento de clique no botão de marcar
-            const botao = div.querySelector(".marcar-btn");
-            botao.addEventListener("click", () => marcarComoResolvida(faq, botao));
+            //const botao = div.querySelector(".marcar-btn");
+            //botao.addEventListener("click", () => marcarComoResolvida(faq, botao));
           });
         }
 
         // Atualizar a lista das mais pesquisadas com a pergunta, causa e solução
         encontrados.forEach(faq => {
           // Verifica se a pergunta já foi registrada nas perguntas mais pesquisadas
-          if (!perguntasMaisPesquisadas.some((item) => item.pergunta === faq.pergunta)) {
+          if (!perguntasMaisPesquisadas.some((item) => item.id === faq.id)) {
             perguntasMaisPesquisadas.push({
+              id: faq.id,
               pergunta: faq.pergunta,
               causa: faq.causa,
               solucao: faq.solucao,
@@ -109,11 +120,12 @@ input.addEventListener("keypress", function (e) {
 // Função para marcar uma solução como resolvida
 function marcarComoResolvida(faq, botao) {
     // Verifica se já está na lista de mais pesquisadas
-    let perguntaExistente = perguntasMaisPesquisadas.find((item) => item.pergunta === faq.pergunta);
+    let perguntaExistente = perguntasMaisPesquisadas.find((item) => item.id === faq.id);
   
     if (!perguntaExistente) {
       // Se ainda não estiver, adiciona com 1 marcação
       perguntaExistente = {
+        id: faq.id,
         pergunta: faq.pergunta,
         causa: faq.causa,
         solucao: faq.solucao,

@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    height: 100vh;
+    height: 95vh;
     background-color: #282a36;
     color: #f8f8f2;
     font-family: Arial, sans-serif;
@@ -54,20 +54,21 @@ body {
     white-space: normal;
     word-wrap: break-word;
   }
-  
-  .resultado h3 {
-    color: #8be9fd;
-    margin: 0 0 10px 0;
+
+  .resultado h2 a{
+    color: #ffffff;
+    text-decoration: underline;
   }
   
   .resultado p {
     color: #f8f8f2;
-    margin: 0;
+    margin: 0 0 10px 0;
     line-height: 1.6;
   }
   
   .resultado p strong {
     color: #bd93f9;
+    margin: 0 0 10px 0;
   }
   
   /* Estilo do botão de marcar */
@@ -80,8 +81,8 @@ body {
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
-    width: 40px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
     cursor: pointer;
     font-size: 0.9rem;
     transition: background-color 0.3s ease;
