@@ -35,10 +35,12 @@ function normalizarTexto(texto) {
 }
 
 // Função que verifica se todas as palavras do termo de pesquisa estão presentes na pergunta
-function buscarFragmentos(termo, pergunta) {
+function buscarFragmentos(termo, pergunta, causa, solucao) {
   const palavrasTermo = termo.split(" ").map(normalizarTexto); // Divide o termo em palavras e normaliza
   const perguntaNormalizada = normalizarTexto(pergunta); // Normaliza a pergunta
-  return palavrasTermo.every((palavra) => perguntaNormalizada.includes(palavra)); // Verifica todas as palavras
+  const causaNormalizada = normalizarTexto(causa); // Normaliza a causa
+  const solucaoNormalizada = normalizarTexto(solucao); // Normaliza a solução
+  return palavrasTermo.every((palavra) => perguntaNormalizada.includes(palavra) || causaNormalizada.includes(palavra) || solucaoNormalizada.includes(palavra)); // Verifica todas as palavras
 }
 
 input.addEventListener("keypress", function (e) {
@@ -50,18 +52,15 @@ input.addEventListener("keypress", function (e) {
     console.log("Termo de pesquisa:", termo); // Log do termo de pesquisa
     if (termo.length === 0) { 
       console.log("Campo de pesquisa vazio, exibindo perguntas mais pesquisadas.");
-      exibirMaisPesquisadas(); 
+      exibirMaisPesquisadas();
       return;
     } // Se o termo estiver vazio, exibe as perguntas mais pesquisadas
-
-    // Divida o termo em palavras
-    const palavrasTermo = termo.split(" ").map(normalizarTexto);
 
     fetch("faq.json")
       .then((res) => res.json())
       .then((faqs) => {
         const encontrados = faqs.filter(faq =>
-          buscarFragmentos(termo, faq.pergunta)
+          buscarFragmentos(termo, faq.pergunta, faq.causa, faq.solucao) 
         );
 
         // Exibir resultados encontrados ou mensagem de erro
